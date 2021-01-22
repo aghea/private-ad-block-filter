@@ -1,0 +1,81 @@
+[Adblock Plus 2.0]
+! Title: mydrivers Filter
+! Last Modified: 20 Jan 2021 12:10 UTC
+! Expires: 4 days (update frequency)
+! Homepage: http://agiha.vicp.net:32580/
+! License: https://easylist-downloads.adblockplus.org/COPYING
+!
+!-----------------------General advert blocking filters-----------------------!
+news.mydrivers.com###weixin
+news.mydrivers.com##.adsbygoogle
+news.mydrivers.com##.baidu
+news.mydrivers.com##.baidu_left
+news.mydrivers.com##.duilian_close2
+news.mydrivers.com###i_yuedu_content
+news.mydrivers.com##.hot.photo
+news.mydrivers.com##.news_right
+news.mydrivers.com##.pageFooter
+news.mydrivers.com##footer
+news.mydrivers.com##.bqian
+news.mydrivers.com##.zcdf
+news.mydrivers.com##.share
+news.mydrivers.com###i_lastnext
+news.mydrivers.com##.module_info
+news.mydrivers.com##div[style="overflow:hidden;"]
+news.mydrivers.com##.plun_box
+rrys2020.com##.chat-enterbox
+rrys2020.com##.tc.ed-enter01
+ithome.com###tt
+news.mydrivers.com##.news_t66j_d.t1j_l0ist20_tu2020
+news.mydrivers.com##div[style="margin:auto; padding-top:0px; text-align:center"]
+ithome.com###cat-hot
+ithome.com##.cat-list
+ithome.com###rank
+ithome.com##.tab-list
+rrys2020.com##div[style="text-align:left;margin:15px 0;"]
+rrys2020.com##div[style="margin-top:20px"]
+rrys2020.com###globalNav1
+rrys2020.com###naifei
+rrys2020.com##.lx167
+got002.com###adv-69
+rrys2020.com###globalNav2
+got002.com###adv-70-1
+news.mydrivers.com##div[style="width:580px;margin:auto; padding:10px 0"]
+news.mydrivers.com##div[style="width:728px;height:90px; margin: auto; padding-top: 5px;"]
+mydrivers.com##.adsbygoogle
+mydrivers.com##div[style="width:1300px;height:90px;margin:auto;background:#fff;"]
+news.mydrivers.com##div[style="width:728px; height:90px; margin:auto; padding-top:10px;"]
+news.mydrivers.com##div[style="width:728px; height:90px; margin:auto; padding-top:5px;overflow:hidden;"]
+news.mydrivers.com###footer
+news.mydrivers.com###commentsiframe
+news.mydrivers.com##div[style="width:728px;margin:auto; padding:10px 0"]
+baike.baidu.com##.right-ad
+news.mydrivers.com##.ewmer2
+news.mydrivers.com###hostnews_list
+news.mydrivers.com##.news_lb
+news.mydrivers.com##div[style="width:850px;height:250px; margin: auto; padding-top: 5px;"]
+news.mydrivers.com##.guanzhu
+news.mydrivers.com##.url
+news.mydrivers.com##.end
+news.mydrivers.com##.zhuanzai
+mydrivers.com##.shidian
+mydrivers.com##.holiday
+news.mydrivers.com###menu_m
+news.mydrivers.com##.nav_box
+news.mydrivers.com##.top_1a
+news.mydrivers.com##.top
+news.mydrivers.com##.pathway
+news.mydrivers.com##.main_right
+mydrivers.com##.top_1a
+mydrivers.com##.top
+mydrivers.com##.nav
+news.mydrivers.com##div[style="height:40px"]
+news.mydrivers.com##.bqian1
+news.mydrivers.com##div[style="height:50px;"]
+bde4.cc##div[style="position: fixed;bottom: -40px;right:0;z-index:999;width:250px"]
+mydrivers.com##.yuandan
+bd-film.com###rel_movies_cpc_main
+bd-film.cc###rel_movies_cpc_main
+bde4.com##div[style="position: fixed;bottom: -40px;right:0;z-index:999;width:250px"]
+ithome.com###ifcomment
+||ithome.com/block/dajia.html
