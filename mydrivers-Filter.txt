@@ -79,3 +79,4 @@ bd-film.cc###rel_movies_cpc_main
 bde4.com##div[style="position: fixed;bottom: -40px;right:0;z-index:999;width:250px"]
 ithome.com###ifcomment
 ||ithome.com/block/dajia.html
+mydrivers.com##div[style="margin:0 auto; width:1390px; height:100px;"]
