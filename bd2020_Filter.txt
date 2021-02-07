@@ -6,7 +6,6 @@
 ! License: https://easylist-downloads.adblockplus.org/COPYING
 !
 !-----------------------General advert blocking filters-----------------------!
-baike.baidu.com##.right-ad
 bd-film.com###rel_movies_cpc_main
 bd-film.cc###rel_movies_cpc_main
 bd2020.com###rel_movies_cpc_sub
