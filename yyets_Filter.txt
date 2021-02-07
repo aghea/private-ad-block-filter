@@ -1,0 +1,18 @@
+[Adblock Plus 2.0]
+! Title: ageha's yyets Filter
+! Last Modified: 7 Feb 2021 12:10 UTC
+! Expires: 4 days (update frequency)
+! Homepage: https://gitee.com/ageha/ad-block-filter/
+! License: https://easylist-downloads.adblockplus.org/COPYING
+!
+!-----------------------General advert blocking filters-----------------------!
+rrys2020.com##.chat-enterbox
+rrys2020.com##.tc.ed-enter01
+rrys2020.com##div[style="text-align:left;margin:15px 0;"]
+rrys2020.com##div[style="margin-top:20px"]
+rrys2020.com###globalNav1
+rrys2020.com###naifei
+rrys2020.com##.lx167
+got002.com###adv-69
+rrys2020.com###globalNav2
+got002.com###adv-70-1
