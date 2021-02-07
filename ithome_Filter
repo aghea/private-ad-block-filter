@@ -1,0 +1,15 @@
+[Adblock Plus 2.0]
+! Title: ageha's ithome Filter
+! Last Modified: 7 Feb 2021 12:10 UTC
+! Expires: 4 days (update frequency)
+! Homepage: https://gitee.com/ageha/ad-block-filter/
+! License: https://easylist-downloads.adblockplus.org/COPYING
+!
+!-----------------------General advert blocking filters-----------------------!
+ithome.com###tt
+ithome.com###cat-hot
+ithome.com##.cat-list
+ithome.com###rank
+ithome.com##.tab-list
+ithome.com###ifcomment
+||ithome.com/block/dajia.html
