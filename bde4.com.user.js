@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     Block bde4 ads
-// @version  2
+// @version  3
 // @grant    none
 // @include      *://bde4.com/*
 // @include      *://bde4.cc/*
@@ -13,6 +13,26 @@
   var centers = document.getElementsByTagName("center");
   for(var c of centers){
     c.parentNode.removeChild(c);
+  }
+
+  var divs = document.getElementsByTagName("div");
+  for (var div of divs){
+    var realPosition = getRealStyle(div,"position");
+    var realBottom = getRealStyle(div,"bottom");
+    if(realPosition=="fixed" && realBottom=="-10px"){
+      //alert(realPosition);
+      div.parentNode.removeChild(div);
+    }
+  }
+  
+  function getRealStyle(element,styleName){
+    var realStyle = null;
+    if(element.currentStyle){
+      	realStyle = element.currentStyle[styleName];//IE
+      }else if(window.getComputedStyle){
+      	realStyle=window.getComputedStyle(element,null)[styleName];//W3C
+      }
+    return realStyle;
   }
 
 })();
