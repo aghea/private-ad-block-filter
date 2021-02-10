@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name              block yyets
 // @homepageURL       https://gitee.com/ageha/ad-block-filter
+// @homepage          https://gitee.com/ageha/ad-block-filter
+// @website           https://gitee.com/ageha/ad-block-filter
 // @author            ageha
 // @license           BSD 3-clause Clear License
 // @version           1.1.1
