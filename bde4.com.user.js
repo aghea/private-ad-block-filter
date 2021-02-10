@@ -1,12 +1,15 @@
 // ==UserScript==
-// @name     Block bde4 ads
-// @version  3
-// @grant    none
-// @include      *://bde4.com/*
-// @include      *://bde4.cc/*
-// @updateURL https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
-// @downloadURL https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
-// @installURL https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
+// @name              Block bde4 ads
+// @homepageURL       https://gitee.com/ageha/ad-block-filter
+// @author            ageha
+// @license           BSD 3-clause Clear License
+// @version           1.1.1
+// @grant             none
+// @include           *://bde4.com/*
+// @include           *://bde4.cc/*
+// @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
+// @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
+// @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
 // ==/UserScript==
 
 (function () {

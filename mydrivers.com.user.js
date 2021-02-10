@@ -1,11 +1,14 @@
 // ==UserScript==
-// @name     优惠商品信息
-// @version  2
-// @grant    none
-// @include      *://*.mydrivers.com/*
-// @updateURL https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
-// @downloadURL https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
-// @installURL https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
+// @name              mydrivers优惠商品信息
+// @homepageURL       https://gitee.com/ageha/ad-block-filter
+// @author            ageha
+// @license           BSD 3-clause Clear License
+// @version           1.1.1
+// @grant             none
+// @include           *://*.mydrivers.com/*
+// @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
+// @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
+// @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
 
 (function () {
