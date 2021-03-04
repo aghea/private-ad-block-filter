@@ -1,5 +1,8 @@
 // ==UserScript==
-// @name         New Userscript
+// @name         BitComet web 自动跳转
+// @homepageURL       https://gitee.com/ageha/ad-block-filter
+// @homepage          https://gitee.com/ageha/ad-block-filter
+// @website           https://gitee.com/ageha/ad-block-filter
 // @namespace    ageha.com/bitcometWeb
 // @version      0.1
 // @description  BitComet web 自动跳转
