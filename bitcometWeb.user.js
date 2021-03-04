@@ -21,7 +21,7 @@
     }
     var href = window.location.href;
     if(href.indexOf("task_add_httpftp_result") > -1){
-        setInterval(waitClick,1000)
+        setInterval(waitClick,2000)
     } else {
         var inputs = document.getElementsByTagName("input");
         inputs[0].focus();
