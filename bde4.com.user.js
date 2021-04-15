@@ -11,6 +11,7 @@
 // @grant             none
 // @include           *://bde4.com/*
 // @include           *://bde4.cc/*
+// @include           *://*.bde4.cc/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
 // @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/bde4.com.user.js
