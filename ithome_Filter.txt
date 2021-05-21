@@ -14,3 +14,5 @@ ithome.com##.tab-list
 ithome.com###ifcomment
 ithome.com###fi
 ||ithome.com/block/dajia.html
+ithome.com###nav
+ithome.com###side_func
