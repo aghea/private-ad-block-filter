@@ -13,6 +13,8 @@
 // @include           *://bde4.cc/*
 // @include           *://*.bde4.com/*
 // @include           *://*.bde4.cc/*
+// @include           *://*.mp4er.com/*
+// @include           *://mp4er.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
 // @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
