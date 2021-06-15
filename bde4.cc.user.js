@@ -26,7 +26,7 @@
     c.parentNode.removeChild(c);
   }
 
-​  var divs = document.getElementsByTagName("div");
+  var divs = document.getElementsByTagName("div");
   for (var div of divs){
     var realPosition = getRealStyle(div,"position");
     var realBottom = getRealStyle(div,"bottom");
@@ -34,5 +34,5 @@
       //alert(realPosition);
       div.parentNode.removeChild(div);
     }
-  } 
+  }
 })();
