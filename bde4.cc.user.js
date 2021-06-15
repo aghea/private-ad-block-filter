@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.1.4.1
+// @version           1.1.5.1
 // @grant             none
 // @include           *://bde4.com/*
 // @include           *://bde4.cc/*
@@ -30,9 +30,11 @@
   for (var div of divs){
     var realPosition = getRealStyle(div,"position");
     var realBottom = getRealStyle(div,"bottom");
-    if(realPosition=="fixed" && (realBottom=="-10px" || realBottom=="-40px")){
+    if(realPosition=="fixed" && (realBottom=="-10px" || realBottom=="-40px") 
+      || div.className == "ui stackable grid"){
       //alert(realPosition);
       div.parentNode.removeChild(div);
     }
+
   }
 })();
