@@ -10,3 +10,4 @@ bd-film.com###rel_movies_cpc_main
 bd-film.cc###rel_movies_cpc_main
 bd2020.com###rel_movies_cpc_sub
 mp4pa.com##.embed-responsive.clearfix
+bd2020.com##.dfg-video-title
