@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.1.6.2
+// @version           1.1.6.3
 // @grant             none
 // @include           *://bde4.com/*
 // @include           *://bde4.cc/*
@@ -37,6 +37,7 @@
       //alert(realPosition);
       div.parentNode.removeChild(div);
     }
+  }
     var dls = document.getElementsByTagName("dl");
     for (var dl of dls){
         if (dl.className == "dl-inline"){
@@ -52,5 +53,5 @@
             sec.parentNode.removeChild(sec);
         }
     }
-  }
+
 })();
