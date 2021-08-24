@@ -16,6 +16,7 @@
 // @include           *://*.mp4er.com/*
 // @include           *://mp4er.com/*
 // @include           *://bde4.icu/
+// @include           *://*.bde4.icu/
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
 // @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
@@ -26,28 +27,24 @@
   for(var c of centers){
     c.parentNode.removeChild(c);
   }
-
   var divs = document.getElementsByTagName("div");
   for (var div of divs){
     var realPosition = getRealStyle(div,"position");
     var realBottom = getRealStyle(div,"bottom");
-    if(realPosition=="fixed" && (realBottom=="-10px" || realBottom=="-40px") 
+    if(realPosition=="fixed" && (realBottom=="-10px" || realBottom=="-40px")
       || div.className == "ui stackable grid"
       || div.className == "download-help"){
       //alert(realPosition);
       div.parentNode.removeChild(div);
     }
-    
     var dls = document.getElementsByTagName("dl");
     for (var dl of dls){
         if (dl.className == "dl-inline"){
             dl.parentNode.removeChild(dl);
         }
     }
-
     var commentList = document.getElementById("comment-list");
     commentList.parentNode.removeChild(commentList);
-
     var sections = document.getElementsByTagName("section");
     for (var sec of sections){
         if (sec.className == "abstract mobile-hide"){
@@ -55,6 +52,5 @@
             sec.parentNode.removeChild(sec);
         }
     }
-
   }
 })();
