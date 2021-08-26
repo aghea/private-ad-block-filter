@@ -13,3 +13,4 @@ mp4pa.com##.embed-responsive.clearfix
 bd2020.com##.dfg-video-title
 domp4.cc##.alert.alert-warning.alert-dismissable
 bd2020.com##.videopic.lazy.swiper-lazy
+domp4.cc##.footer.cclear
