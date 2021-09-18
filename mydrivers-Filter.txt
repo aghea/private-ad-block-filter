@@ -60,3 +60,4 @@ mydrivers.com##div[style="margin:0 auto; width:1390px; height:100px;"]
 mydrivers.com##.hdnewyear
 news.mydrivers.com##div[style="width:890px;height:90px; margin: auto; padding-top: 5px;padding-bottom: 13px;"]
 news.mydrivers.com##.xianguan
+mydrivers.com##.zhongqiu
