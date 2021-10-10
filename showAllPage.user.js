@@ -17,7 +17,7 @@
 // ==/UserScript==
 function showAll(){
     var alinks = document.getElementsByTagName("a");
-    alert(alinks.length);
+
     for (var alink of alinks){
         if(alink.innerHTML.indexOf("全文") > -1){
             var text = alink.href;
