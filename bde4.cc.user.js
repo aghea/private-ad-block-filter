@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.1.6.3
+// @version           1.2.0.0
 // @grant             none
 // @include           *://bde4.com/*
 // @include           *://bde4.cc/*
@@ -22,7 +22,7 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
 // @require           https://gitee.com/ageha/ad-block-filter/raw/master/common/commonFun.js
 // ==/UserScript==
-(function () {
+function removeAdBlock(){
   var centers = document.getElementsByTagName("center");
   for(var c of centers){
     c.parentNode.removeChild(c);
@@ -38,12 +38,16 @@
       div.parentNode.removeChild(div);
     }
   }
+}
+function removeTips(){
     var dls = document.getElementsByTagName("dl");
     for (var dl of dls){
         if (dl.className == "dl-inline"){
             dl.parentNode.removeChild(dl);
         }
     }
+}
+function removeComment(){
     var commentList = document.getElementById("comment-list");
     commentList.parentNode.removeChild(commentList);
     var sections = document.getElementsByTagName("section");
@@ -53,5 +57,10 @@
             sec.parentNode.removeChild(sec);
         }
     }
+}
+(function () {
+    removeAdBlock();
+    removeTips();
+    removeComment();
 
 })();
