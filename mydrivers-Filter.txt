@@ -62,3 +62,4 @@ news.mydrivers.com##div[style="width:890px;height:90px; margin: auto; padding-to
 news.mydrivers.com##.xianguan
 mydrivers.com##.zhongqiu
 mydrivers.com##.guoqing
+news.mydrivers.com##.dashang
