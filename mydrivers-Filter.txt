@@ -63,3 +63,4 @@ news.mydrivers.com##.xianguan
 mydrivers.com##.zhongqiu
 mydrivers.com##.guoqing
 news.mydrivers.com##.dashang
+mydrivers.com##.taobao_tab
