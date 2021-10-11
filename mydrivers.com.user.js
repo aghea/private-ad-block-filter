@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name              mydrivers优惠商品信息
+// @name              关闭mydrivers各种广告
 // @homepageURL       https://gitee.com/ageha/ad-block-filter
 // @homepage          https://gitee.com/ageha/ad-block-filter
 // @website           https://gitee.com/ageha/ad-block-filter
@@ -7,15 +7,35 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.1.1
+// @version           1.2.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
-
-(function () {
+function modifyDivWidth(){
+    //todo
+    var Divs = document.getElementsByClassName("main_box");
+    var mainLeft = document.getElementsByClassName("main_left");
+    var mainRight = document.getElementsByClassName("main_right");
+    mainRight[0].parentNode.removeChild(mainRight[0]);
+    mainLeft[0].style.width="1200px;";
+}
+function hidetj_bottom(){
+    var div = document.getElementsByClassName("tj_bottom");
+    div[0].innerHTML="";
+    div[0].innerText="";
+    var a_showhotnews_list_dia = document.getElementById("a_showhotnews_list_dia");
+    a_showhotnews_list_dia.innerHTML="";
+    a_showhotnews_list_dia.innerText="";
+    a_showhotnews_list_dia.parentNode.removeChild(a_showhotnews_list_dia);
+}
+function removeCommentsiframe(){
+  var iframe = document.getElementById("commentsiframe");
+  iframe.parentNode.removeChild(iframe);
+}
+function removeGoods(){
   var block = "商品信息>>";
   var flag = true;
   var divs = document.getElementsByClassName("news_info");
@@ -35,9 +55,6 @@
         }
       }
     }
-    
-    
-    
     var div_elemts = div.getElementsByTagName("div");
     for (var div_elemt of div_elemts){
       var b_elemts = div_elemt.getElementsByTagName("b");
@@ -52,9 +69,11 @@
       }
     }
   }
-  
-  var iframe = document.getElementById("commentsiframe");
-  iframe.parentNode.removeChild(iframe);
+}
+(function () {
+    modifyDivWidth();
+    hidetj_bottom();
+    removeCommentsiframe();
 })();
 
 
