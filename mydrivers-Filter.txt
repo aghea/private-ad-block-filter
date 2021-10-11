@@ -63,3 +63,4 @@ mydrivers.com##.guoqing
 mydrivers.com##.dashang
 mydrivers.com##.taobao_tab
 mydrivers.com##.xguan_pce
+mydrivers.com##.news_bt1
