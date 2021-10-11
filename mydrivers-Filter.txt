@@ -36,6 +36,7 @@ mydrivers.com##div[style="width:890px;height:90px; margin: auto; padding-top: 5p
 mydrivers.com##div[style="margin:0 auto; width:1390px; height:100px;"]
 mydrivers.com##div[style="height:40px"]
 mydrivers.com##div[style="height:50px;"]
+mydrivers.com##div[style="height: 60px;"]
 mydrivers.com###footer
 mydrivers.com###commentsiframe
 mydrivers.com##.ewmer2
@@ -61,3 +62,4 @@ mydrivers.com##.zhongqiu
 mydrivers.com##.guoqing
 mydrivers.com##.dashang
 mydrivers.com##.taobao_tab
+mydrivers.com##.xguan_pce
