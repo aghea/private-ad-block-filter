@@ -6,61 +6,58 @@
 ! License: https://easylist-downloads.adblockplus.org/COPYING
 !
 !-----------------------General advert blocking filters-----------------------!
-news.mydrivers.com###weixin
-news.mydrivers.com##.adsbygoogle
-news.mydrivers.com##.baidu
-news.mydrivers.com##.baidu_left
-news.mydrivers.com##.duilian_close2
-news.mydrivers.com###i_yuedu_content
-news.mydrivers.com##.hot.photo
-news.mydrivers.com##.news_right
-news.mydrivers.com##.pageFooter
-news.mydrivers.com##.bqian
-news.mydrivers.com##.zcdf
-news.mydrivers.com##.share
-news.mydrivers.com###i_lastnext
-news.mydrivers.com##.module_info
-news.mydrivers.com##div[style="overflow:hidden;"]
-news.mydrivers.com##.plun_box
-news.mydrivers.com##.news_t66j_d.t1j_l0ist20_tu2020
-news.mydrivers.com##div[style="margin:auto; padding-top:0px; text-align:center"]
-news.mydrivers.com##div[style="width:580px;margin:auto; padding:10px 0"]
-news.mydrivers.com##div[style="width:728px;margin:auto; padding:10px 0"]
-news.mydrivers.com##div[style="width:728px;height:90px; margin:auto; padding-top: 5px;"]
-news.mydrivers.com##div[style="width:728px;height:90px; margin:auto; padding-top:10px;"]
+mydrivers.com###weixin
+mydrivers.com##.baidu
+mydrivers.com##.baidu_left
+mydrivers.com##.duilian_close2
+mydrivers.com###i_yuedu_content
+mydrivers.com##.hot.photo
+mydrivers.com##.news_right
+mydrivers.com##.pageFooter
+mydrivers.com##.bqian
+mydrivers.com##.zcdf
+mydrivers.com##.share
+mydrivers.com###i_lastnext
+mydrivers.com##.module_info
+mydrivers.com##div[style="overflow:hidden;"]
+mydrivers.com##.plun_box
+mydrivers.com##.news_t66j_d.t1j_l0ist20_tu2020
+mydrivers.com##div[style="margin:auto; padding-top:0px; text-align:center"]
+mydrivers.com##div[style="width:580px;margin:auto; padding:10px 0"]
+mydrivers.com##div[style="width:728px;margin:auto; padding:10px 0"]
+mydrivers.com##div[style="width:728px;height:90px; margin:auto; padding-top: 5px;"]
+mydrivers.com##div[style="width:728px;height:90px; margin:auto; padding-top:10px;"]
 !news.mydrivers.com##div[style="width:728px;height:90px; margin:auto; padding-top:5px;overflow:hidden;"]
 mydrivers.com##.adsbygoogle
 mydrivers.com##div[style="width:1300px;height:90px;margin:auto;background:#fff;"]
-news.mydrivers.com###footer
-news.mydrivers.com###commentsiframe
-news.mydrivers.com##.ewmer2
-news.mydrivers.com###hostnews_list
-news.mydrivers.com##.news_lb
-news.mydrivers.com##div[style="width:850px;height:250px; margin: auto; padding-top: 5px;"]
-news.mydrivers.com##.guanzhu
-news.mydrivers.com##.url
-news.mydrivers.com##.end
-news.mydrivers.com##.zhuanzai
+mydrivers.com###footer
+mydrivers.com###commentsiframe
+mydrivers.com##.ewmer2
+mydrivers.com###hostnews_list
+mydrivers.com##.news_lb
+mydrivers.com##div[style="width:850px;height:250px; margin: auto; padding-top: 5px;"]
+mydrivers.com##.guanzhu
+mydrivers.com##.url
+mydrivers.com##.end
+mydrivers.com##.zhuanzai
 mydrivers.com##.shidian
 mydrivers.com##.holiday
-news.mydrivers.com###menu_m
-news.mydrivers.com##.nav_box
-news.mydrivers.com##.top_1a
-news.mydrivers.com##.top
-news.mydrivers.com##.pathway
-news.mydrivers.com##.main_right
+mydrivers.com###menu_m
+mydrivers.com##.nav_box
 mydrivers.com##.top_1a
 mydrivers.com##.top
+mydrivers.com##.pathway
+mydrivers.com##.main_right
 mydrivers.com##.nav
-news.mydrivers.com##div[style="height:40px"]
-news.mydrivers.com##.bqian1
-news.mydrivers.com##div[style="height:50px;"]
+mydrivers.com##div[style="height:40px"]
+mydrivers.com##.bqian1
+mydrivers.com##div[style="height:50px;"]
 mydrivers.com##.yuandan
 mydrivers.com##div[style="margin:0 auto; width:1390px; height:100px;"]
 mydrivers.com##.hdnewyear
-news.mydrivers.com##div[style="width:890px;height:90px; margin: auto; padding-top: 5px;padding-bottom: 13px;"]
-news.mydrivers.com##.xianguan
+mydrivers.com##div[style="width:890px;height:90px; margin: auto; padding-top: 5px;padding-bottom: 13px;"]
+mydrivers.com##.xianguan
 mydrivers.com##.zhongqiu
 mydrivers.com##.guoqing
-news.mydrivers.com##.dashang
+mydrivers.com##.dashang
 mydrivers.com##.taobao_tab
