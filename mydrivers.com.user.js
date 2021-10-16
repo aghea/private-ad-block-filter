@@ -15,7 +15,7 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
 function removeLuoyonghao(){
-    var blocks=["罗永浩","李国庆","立减"];
+    var blocks=["罗永浩","李国庆","立减","到手价","低至"];
     var spans = document.getElementsByClassName("titl");
     for(var span of spans){
         for(var block of blocks){
