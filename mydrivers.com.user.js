@@ -7,13 +7,24 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.2.0
+// @version           1.2.1
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
+function removeLuoyonghao(){
+    var blocks=["罗永浩","李国庆","立减"];
+    var spans = document.getElementsByClassName("titl");
+    for(var span of spans){
+        for(var block of blocks){
+            if(span.innerText.indexOf(block) > -1){
+                span.innerText = "";
+            }
+        }
+    }
+}
 function modifyDivWidth(){
     //todo
     var Divs = document.getElementsByClassName("main_box");
@@ -22,6 +33,7 @@ function modifyDivWidth(){
     mainRight[0].parentNode.removeChild(mainRight[0]);
     mainLeft[0].style.width="1200px;";
 }
+//关闭页面闲置时间弹框
 function hidetj_bottom(){
     var div = document.getElementsByClassName("tj_bottom");
     div[0].innerHTML="";
@@ -71,6 +83,7 @@ function removeGoods(){
   }
 }
 (function () {
+  removeLuoyonghao();
     modifyDivWidth();
     hidetj_bottom();
     removeCommentsiframe();
