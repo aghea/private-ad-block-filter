@@ -7,7 +7,7 @@
 // @namespace         ageha.com/ithome
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.1.1
+// @version           1.1.2
 // @grant             none
 // @include           *://www.ithome.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/ithome.com.user.js
@@ -17,15 +17,10 @@
 
 (function () {
   var lis = document.getElementsByTagName("li");
-  var li_block = new Array();
-  var idx = 0;
   for(var li of lis){
     if(li.innerHTML.indexOf("lapin") > -1){
-      li_block[idx++] = li;
+      li.innerHTML = "";
+      li.innerText = "";
     }
   }
-  for(var li of li_block){
-    li.parentNode.removeChild(li);
-  }
-
 })();
