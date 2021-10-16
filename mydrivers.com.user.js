@@ -21,6 +21,7 @@ function removeLuoyonghao(){
         for(var block of blocks){
             if(span.innerText.indexOf(block) > -1){
                 span.innerText = "";
+                span.parentNode.innerText = "";
             }
         }
     }
