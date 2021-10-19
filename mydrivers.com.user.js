@@ -21,7 +21,7 @@ function removeLuoyonghao(){
     var spans = document.getElementsByClassName("titl");
     for(var span of spans){
         for(var block of blocks){
-            if(span.innerText.indexOf(block) > -1 || re.test(tmp)){
+            if(span.innerText.indexOf(block) > -1 || re.test(span.innerText)){
                 span.innerText = "";
                 span.parentNode.innerText = "";
             }
