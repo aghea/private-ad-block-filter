@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.2.1
+// @version           1.3.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
@@ -15,11 +15,13 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
 function removeLuoyonghao(){
+    //仅\一到二位数字，小数点一到二小数元
+    var re=/\u4ec5\d{1,2}(\.[0-9]{1,2})?\u5143/;
     var blocks=["罗永浩","李国庆","立减","到手价","低至","大促","预售","包邮"];
     var spans = document.getElementsByClassName("titl");
     for(var span of spans){
         for(var block of blocks){
-            if(span.innerText.indexOf(block) > -1){
+            if(span.innerText.indexOf(block) > -1 || re.test(tmp)){
                 span.innerText = "";
                 span.parentNode.innerText = "";
             }
