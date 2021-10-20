@@ -15,23 +15,33 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
 function removeLuoyonghao(){
-    //仅\一到二位数字，小数点一到二小数元
-    var re=/\u4ec5\d{1,2}(\.[0-9]{1,2})?\u5143/;
+    ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
+    var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    //减1-4元
+    var re2=/\u51cf\d{1,4}\u5143/;
+    var reArray=[re1,
+                 //re2
+                ];
     var blocks=["罗永浩","李国庆","立减","到手价","低至","大促","预售","包邮"];
     var spans = document.getElementsByClassName("titl");
     for(var span of spans){
-      if (re.test(span.innerText)) {
-        span.innerText = "";
-        span.parentNode.innerText = "";
-      } else {
-        for(var block of blocks){
-            if(span.innerText.indexOf(block) > -1 ){
+        var notFoundflg = true;
+        for(var re of reArray){
+            if (re.test(span.innerText)) {
                 span.innerText = "";
                 span.parentNode.innerText = "";
+                notFoundflg = false;
+                break;
             }
         }
-      }
-        
+        if(notFoundflg){
+            for(var block of blocks){
+                if(span.innerText.indexOf(block) > -1 ){
+                    span.innerText = "";
+                    span.parentNode.innerText = "";
+                }
+            }
+        }
     }
 }
 function modifyDivWidth(){
