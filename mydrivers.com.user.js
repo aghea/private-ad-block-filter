@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.3.1
+// @version           1.3.2
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
@@ -15,32 +15,41 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
 function removeLuoyonghao(){
+    //京东|网易|百度|腾讯|芒果|优酷|爱奇艺
+    var batName = /\u4eac\u4e1c|\u7f51\u6613|\u767e\u5ea6|\u817e\u8baf|\u8292\u679c|\u4f18\u9177|\u7231\u5947\u827a/;
+    //会员
+    var batMember = /\u4f1a\u5458/;
     ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
     var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //减1-4元
     var re2=/\u51cf\d{1,4}\u5143/;
-    var reArray=[re1,
-                 //re2
+    var reArray=[re1
+                 //,re2
                 ];
     var blocks=["罗永浩","李国庆","立减","到手价","低至","大促","预售","包邮"];
     var spans = document.getElementsByClassName("titl");
     for(var span of spans){
         var notFoundflg = true;
+        if(batName.test(span.innerText) && batMember.test(span.innerText)){
+          span.innerText = "";
+          span.parentNode.innerText = "";
+          break;
+        }
         for(var re of reArray){
-            if (re.test(span.innerText)) {
-                span.innerText = "";
-                span.parentNode.innerText = "";
-                notFoundflg = false;
-                break;
-            }
+          if (re.test(span.innerText)) {
+              span.innerText = "";
+              span.parentNode.innerText = "";
+              notFoundflg = false;
+              break;
+          }
         }
         if(notFoundflg){
-            for(var block of blocks){
-                if(span.innerText.indexOf(block) > -1 ){
-                    span.innerText = "";
-                    span.parentNode.innerText = "";
-                }
+          for(var block of blocks){
+            if(span.innerText.indexOf(block) > -1 ){
+              span.innerText = "";
+              span.parentNode.innerText = "";
             }
+          }
         }
     }
 }
