@@ -110,11 +110,26 @@ function removeGoods(){
     }
   }
 }
-(function () {
+function homePage(){
   removeLuoyonghao();
-    modifyDivWidth();
-    hidetj_bottom();
-    removeCommentsiframe();
+}
+function newsInfoPage(){
+  modifyDivWidth();
+  hidetj_bottom();
+  removeCommentsiframe();
+}
+function commonFun(){
+
+}
+(function () {
+  var url = window.location.href;
+  if(url.indexOf("www.mydrivers") > -1){
+    homePage();
+  }else if(url.indexOf("news.mydrivers") > -1){
+    newsInfoPage();
+  }else{
+    commonFun();
+  }
 })();
 
 
