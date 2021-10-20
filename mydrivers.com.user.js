@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.3.2
+// @version           1.3.3
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
@@ -26,28 +26,31 @@ function removeLuoyonghao(){
     var reArray=[re1
                  //,re2
                 ];
-    var blocks=["罗永浩","李国庆","立减","到手价","低至","大促","预售","包邮"];
+    var blocks=["罗永浩","李国庆","立减","到手价","低至","大促","预售","包邮","直降"];
     var spans = document.getElementsByClassName("titl");
     for(var span of spans){
-        var notFoundflg = true;
+        var notFoundFlg = false;
         if(batName.test(span.innerText) && batMember.test(span.innerText)){
           span.innerText = "";
           span.parentNode.innerText = "";
+          notFoundFlg = true;
           break;
         }
         for(var re of reArray){
           if (re.test(span.innerText)) {
               span.innerText = "";
               span.parentNode.innerText = "";
-              notFoundflg = false;
+              notFoundFlg = true;
               break;
           }
         }
-        if(notFoundflg){
+        if(notFoundFlg){
           for(var block of blocks){
             if(span.innerText.indexOf(block) > -1 ){
+              //alert("block = " + block + "   "+span.innerText);
               span.innerText = "";
               span.parentNode.innerText = "";
+              break;
             }
           }
         }
