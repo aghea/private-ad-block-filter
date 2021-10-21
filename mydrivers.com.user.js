@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.3.3
+// @version           1.4.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
@@ -15,43 +15,46 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
 function removeLuoyonghao(){
+    //到手 低至
+    var chuxiao = /\u5230\u624b|\u4f4e\u81f3/;
+    //数字元
+    var yuan = /\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //京东|网易|百度|腾讯|芒果|优酷|爱奇艺
     var batName = /\u4eac\u4e1c|\u7f51\u6613|\u767e\u5ea6|\u817e\u8baf|\u8292\u679c|\u4f18\u9177|\u7231\u5947\u827a/;
     //会员
     var batMember = /\u4f1a\u5458/;
+    var reDoubleArray=[chuxiao,yuan
+                       ,batName,batMember
+                        ];
     ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
     var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //减1-4元
-    var re2=/\u51cf\d{1,4}\u5143/;
+    var re2=/\d{1,4}(\.[0-9]{1,2})+\u5143/;
+    //"罗永浩","李国庆","立减","到手","低至","大促","预售","包邮","直降"
+    var re3=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d/
     var reArray=[re1
-                 //,re2
+                 ,re2
+                 ,re3
                 ];
-    var blocks=["罗永浩","李国庆","立减","到手价","低至","大促","预售","包邮","直降"];
     var spans = document.getElementsByClassName("titl");
+    start:
     for(var span of spans){
-        var notFoundFlg = true;
-        if(batName.test(span.innerText) && batMember.test(span.innerText)){
-          span.innerText = "";
-          span.parentNode.innerText = "";
-          notFoundFlg = false;
-          break;
+        for(var idx = 0;idx < reDoubleArray.length;idx+=2){
+            if(reDoubleArray[idx].test(span.innerText) && reDoubleArray[idx + 1].test(span.innerText)){
+                console.log(span.innerText);
+                span.innerText = "";
+                span.parentNode.innerText = "";
+                continue start;
+            }
         }
         for(var re of reArray){
           if (re.test(span.innerText)) {
+              console.log(span.innerText);
               span.innerText = "";
-              span.parentNode.innerText = "";
-              notFoundFlg = false;
-              break;
-          }
-        }
-        if(notFoundFlg){
-          for(var block of blocks){
-            if(span.innerText.indexOf(block) > -1 ){
-              //alert("block = " + block + "   "+span.innerText);
-              span.innerText = "";
-              span.parentNode.innerText = "";
-              break;
-            }
+              if(span.parentNode != null){
+                  span.parentNode.innerText = "";
+              }
+              continue start;
           }
         }
     }
