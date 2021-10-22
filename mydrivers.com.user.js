@@ -15,8 +15,8 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
 function removeLuoyonghao(){
-    //到手 低至
-    var chuxiao = /\u5230\u624b|\u4f4e\u81f3/;
+    //到手 低至 限时
+    var chuxiao = /\u5230\u624b|\u4f4e\u81f3|\u9650\u65f6/;
     //数字元
     var yuan = /\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //京东|网易|百度|腾讯|芒果|优酷|爱奇艺
