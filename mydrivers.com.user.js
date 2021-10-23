@@ -15,8 +15,8 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
 function removeLuoyonghao(){
-    //到手 低至 限时 新低 京东 天猫 淘宝 商超
-    var chuxiao = /\u5230\u624b|\u4f4e\u81f3|\u9650\u65f6|\u65b0\u4f4e|\u4eac\u4e1c\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85/;
+    //到手 低至 限时 新低 京东 天猫 淘宝 商超 拼多多
+    var chuxiao = /\u5230\u624b|\u4f4e\u81f3|\u9650\u65f6|\u65b0\u4f4e|\u4eac\u4e1c\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85|\u62fc\u591a\u591a/;
     //数字元
     var yuan = /\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //京东|网易|百度|腾讯|芒果|优酷|爱奇艺
