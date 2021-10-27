@@ -7,13 +7,48 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.4.0.3
+// @version           1.5.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // ==/UserScript==
+function removeSpanAD(){
+    ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
+    var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    //减1-4元)
+    var re2=/\d{1,4}(\.[0-9]{1,2})+\u5143\u0029/;
+    //"罗永浩","李国庆","立减","到手","低至","大促","预售","包邮","直降","周鸿祎"
+    var re3=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u5468\u9e3f\u794e/
+    //(xxxx折)
+    var re4=/\u0028\d{1,2}(\.[0-9]{1,2})\u6298\u0029/;
+    //（xxxx折）
+    var re5=/\uff08\d{1,2}(\.[0-9]{1,2})\u6298\uff09/;
+    //1-4.99元
+    var re6=/\d{1,4}(\.[0-9]{1,2})+\u5143/$;
+
+    var reArray=[re1
+                 ,re2
+                 ,re3
+                 ,re4
+                 ,re5
+                 ,re6
+                ];
+    var spans = document.getElementsByClassName("titl");
+    start:
+    for(var span of spans){
+        for(var re of reArray){
+          if (re.test(span.innerText)) {
+              span.innerText = "";
+              span.innerHTML = "";
+              if(span.parentNode != null){
+                  span.parentNode.innerText = "";
+              }
+          }
+        }
+    }
+}
 function removeLuoyonghao(){
     //到手 低至 限时 新低 京东 天猫 淘宝 商超 拼多多
     var chuxiao = /\u5230\u624b|\u4f4e\u81f3|\u9650\u65f6|\u65b0\u4f4e|\u4eac\u4e1c\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85|\u62fc\u591a\u591a/;
@@ -26,23 +61,7 @@ function removeLuoyonghao(){
     var reDoubleArray=[chuxiao,yuan
                        ,batName,batMember
                         ];
-    ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
-    var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
-    //减1-4元)
-    var re2=/\d{1,4}(\.[0-9]{1,2})+\u5143\u0029/;
-    //"罗永浩","李国庆","立减","到手","低至","大促","预售","包邮","直降","周鸿祎"
-    var re3=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u5468\u9e3f\u794e/
-    //(xxxx折)
-    var re4=/\u0028\d{1,2}(\.[0-9]{1,2})\u6298\u0029/;
-    //（xxxx折）
-    var re5=/\uff08\d{1,2}(\.[0-9]{1,2})\u6298\uff09/;
-
-    var reArray=[re1
-                 ,re2
-                 ,re3
-                 ,re4
-                 ,re5
-                ];
+    
     var spans = document.getElementsByClassName("titl");
     start:
     for(var span of spans){
@@ -53,16 +72,6 @@ function removeLuoyonghao(){
                 span.parentNode.innerText = "";
                 continue start;
             }
-        }
-        for(var re of reArray){
-          if (re.test(span.innerText)) {
-              console.log(span.innerText);
-              span.innerText = "";
-              if(span.parentNode != null){
-                  span.parentNode.innerText = "";
-              }
-              continue start;
-          }
         }
     }
 }
@@ -124,6 +133,7 @@ function removeGoods(){
   }
 }
 function homePage(){
+  removeSpanAD();
   removeLuoyonghao();
 }
 function newsInfoPage(){
