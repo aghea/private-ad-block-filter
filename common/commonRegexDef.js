@@ -1,3 +1,4 @@
+function initRegexArray(){
     ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
     var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //减1-4元)
@@ -18,8 +19,10 @@
                  ,re5
                  ,re6
                 ];
-
-
+    return reArray;
+}
+    
+function initRegexDoubleArray(){
     //到手 低至 限时 新低 京东 天猫 淘宝 商超 拼多多
     var chuxiao = /\u5230\u624b|\u4f4e\u81f3|\u9650\u65f6|\u65b0\u4f4e|\u4eac\u4e1c\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85|\u62fc\u591a\u591a/;
     //数字元
@@ -31,4 +34,8 @@
     var reDoubleArray=[chuxiao,yuan
                        ,batName,batMember
                         ];
+    return reDoubleArray;
+}
+
+    
     

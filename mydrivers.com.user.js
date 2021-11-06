@@ -16,6 +16,7 @@
 // @require           https://gitee.com/ageha/ad-block-filter/raw/master/common/commonRegexDef.js
 // ==/UserScript==
 function removeSpanAD(){
+    var reArray = initRegexArray();
     var spans = document.getElementsByClassName("titl");
     start:
     for(var span of spans){
@@ -31,6 +32,7 @@ function removeSpanAD(){
     }
 }
 function removeLuoyonghao(){
+    var reDoubleArray = initRegexDoubleArray();
     var spans = document.getElementsByClassName("titl");
     start:
     for(var span of spans){
