@@ -27,14 +27,14 @@ function initRegexArray(){
 }
     
 function initRegexDoubleArray(){
-    //到手 低至 限时 新低 京东 天猫 淘宝 商超 拼多多
-    var chuxiao = /\u5230\u624b|\u4f4e\u81f3|\u9650\u65f6|\u65b0\u4f4e|\u4eac\u4e1c\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85|\u62fc\u591a\u591a/;
+    //限时 新低 京东 天猫 淘宝 商超 拼多多
+    var chuxiao =/\u9650\u65f6|\u65b0\u4f4e|\u4eac\u4e1c|\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85|\u62fc\u591a\u591a/;
     //数字元
-    var yuan = /\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    var yuan =/\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //京东|网易|百度|腾讯|芒果|优酷|爱奇艺
-    var batName = /\u4eac\u4e1c|\u7f51\u6613|\u767e\u5ea6|\u817e\u8baf|\u8292\u679c|\u4f18\u9177|\u7231\u5947\u827a/;
+    var batName =/\u4eac\u4e1c|\u7f51\u6613|\u767e\u5ea6|\u817e\u8baf|\u8292\u679c|\u4f18\u9177|\u7231\u5947\u827a/;
     //会员
-    var batMember = /\u4f1a\u5458/;
+    var batMember =/\u4f1a\u5458/;
     var reDoubleArray=[chuxiao,yuan
                        ,batName,batMember
                         ];
