@@ -1,26 +1,4 @@
 //version       1.3.0.0
-function removeAdObj(objs){
-    start:
-    for(var obj of objs){
-        for(var idx = 0;idx < reDoubleArray.length;idx+=2){
-            if(reDoubleArray[idx].test(obj.innerText) && reDoubleArray[idx + 1].test(obj.innerText)){
-                obj.innerText = "";
-                obj.parentNode.innerText = "";
-                continue start;
-            }
-        }
-        for(var re of reArray){
-            if(re.test(obj.innerText)){
-                obj.innerHTML = "";
-                obj.innerText = "";
-                continue start;
-            }
-        }
-    }
-
-    
-}
-
 function initRegexArray(){
     ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
     var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
@@ -62,6 +40,32 @@ function initRegexDoubleArray(){
                         ];
     return reDoubleArray;
 }
+
+function removeAdObj(objs){
+    var reArray = initRegexArray();
+    var reDoubleArray = initRegexDoubleArray();
+    start:
+    for(var obj of objs){
+        for(var idx = 0;idx < reDoubleArray.length;idx+=2){
+            if(reDoubleArray[idx].test(obj.innerText) && reDoubleArray[idx + 1].test(obj.innerText)){
+                obj.innerText = "";
+                obj.parentNode.innerText = "";
+                continue start;
+            }
+        }
+        for(var re of reArray){
+            if(re.test(obj.innerText)){
+                obj.innerHTML = "";
+                obj.innerText = "";
+                continue start;
+            }
+        }
+    }
+
+    
+}
+
+
 
     
     

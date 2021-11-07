@@ -15,6 +15,10 @@
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
 // @require           https://gitee.com/ageha/ad-block-filter/raw/master/common/commonRegexDef.js
 // ==/UserScript==
+function removeAd(){
+  var spans = document.getElementsByClassName("titl");
+  removeAdObj(spans);
+}
 function removeSpanAD(){
     var reArray = initRegexArray();
     var spans = document.getElementsByClassName("titl");
@@ -104,8 +108,9 @@ function removeGoods(){
   }
 }
 function homePage(){
-  removeSpanAD();
-  removeLuoyonghao();
+  //removeSpanAD();
+  //removeLuoyonghao();
+  removeAd();
 }
 function newsInfoPage(){
   modifyDivWidth();
