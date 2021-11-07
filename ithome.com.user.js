@@ -18,8 +18,6 @@
 
 (function () {
   var lis = document.getElementsByTagName("li");
-  //var reArray = initRegexArray();
-  //var reDoubleArray = initRegexDoubleArray();
   start:
   for(var li of lis){
     if(li.innerHTML.indexOf("lapin") > -1){
@@ -27,22 +25,6 @@
       li.innerText = "";
       continue start;
     }
-    /*
-    for(var re of reArray){
-        if(re.test(li.innerText)){
-            li.innerHTML = "";
-            li.innerText = "";
-            continue start;
-        }
-    }
-    for(var idx = 0; idx < reDoubleArray.length; idx+=2){
-        if(reDoubleArray[idx].test(li.innerText) && reDoubleArray[idx+1].test(li.innerText)){
-            li.innerHTML = "";
-            li.innerText = "";
-            continue start;
-        }
-    }
-    */
   }
   removeAdObj(lis);
 })();

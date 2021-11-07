@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.6.0.0
+// @version           1.7.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
@@ -19,37 +19,7 @@ function removeAd(){
   var spans = document.getElementsByClassName("titl");
   removeAdObj(spans);
 }
-function removeSpanAD(){
-    var reArray = initRegexArray();
-    var spans = document.getElementsByClassName("titl");
-    start:
-    for(var span of spans){
-        for(var re of reArray){
-          if (re.test(span.innerText)) {
-              span.innerText = "";
-              span.innerHTML = "";
-              if(span.parentNode != null){
-                  span.parentNode.innerText = "";
-              }
-          }
-        }
-    }
-}
-function removeLuoyonghao(){
-    var reDoubleArray = initRegexDoubleArray();
-    var spans = document.getElementsByClassName("titl");
-    start:
-    for(var span of spans){
-        for(var idx = 0;idx < reDoubleArray.length;idx+=2){
-            if(reDoubleArray[idx].test(span.innerText) && reDoubleArray[idx + 1].test(span.innerText)){
-                console.log(span.innerText);
-                span.innerText = "";
-                span.parentNode.innerText = "";
-                continue start;
-            }
-        }
-    }
-}
+
 function modifyDivWidth(){
     //todo
     var Divs = document.getElementsByClassName("main_box");
@@ -108,8 +78,6 @@ function removeGoods(){
   }
 }
 function homePage(){
-  //removeSpanAD();
-  //removeLuoyonghao();
   removeAd();
 }
 function newsInfoPage(){

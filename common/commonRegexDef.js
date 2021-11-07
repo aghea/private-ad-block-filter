@@ -1,4 +1,4 @@
-//version       1.3.0.0
+//version       1.4.0.0
 function initRegexArray(){
     ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
     var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
