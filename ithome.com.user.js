@@ -18,8 +18,8 @@
 
 (function () {
   var lis = document.getElementsByTagName("li");
-  var reArray = initRegexArray();
-  var reDoubleArray = initRegexDoubleArray();
+  //var reArray = initRegexArray();
+  //var reDoubleArray = initRegexDoubleArray();
   start:
   for(var li of lis){
     if(li.innerHTML.indexOf("lapin") > -1){
@@ -27,6 +27,7 @@
       li.innerText = "";
       continue start;
     }
+    /*
     for(var re of reArray){
         if(re.test(li.innerText)){
             li.innerHTML = "";
@@ -41,5 +42,7 @@
             continue start;
         }
     }
+    */
   }
+  removeAdObj(lis);
 })();
