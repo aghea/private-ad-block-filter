@@ -1,30 +1,18 @@
-//version       1.4.1.2
+//version       1.5.0.0
 function initRegexArray(){
-    ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
-    //var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    ///\d{1,4}(\.[0-9]{1,2})?元/,
     var re1=/\d{1,4}(\.[0-9]{1,2})?\u5143/;
-    //1-4元
-    //var re2=/\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //立减,到手,低至,大促,预售,包邮,直降,抄底,秒杀，狂促
-    var re3=/\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u6284\u5e95|\u79d2\u6740|\u72c2\u4fc3/;
-    //(xx.xx折)
-    //var re4=/\u0028\d{1,2}(\.[0-9]{1,2})\u6298\u0029/;
-    var re4=/\d{1,2}(\.[0-9]{1,2})\u6298/;
-    //（xx.xx折）
-    //var re5=/\uff08\d{1,2}(\.[0-9]{1,2})\u6298\uff09/;
-    //罗永浩,李国庆,周鸿祎
-    var re7=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e/;
-    //仅需xx元
-    //var re8=/\u4ec5\u9700\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    var re2=/\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u6284\u5e95|\u79d2\u6740|\u72c2\u4fc3/;
+    //xx.xx折
+    var re3=/\d{1,2}(\.[0-9]{1,2})\u6298/;
+    //罗永浩,李国庆,周鸿祎,董明珠
+    var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0/;
 
     var reArray=[re1
-                 //,re2
+                 ,re2
                  ,re3
                  ,re4
-                 //,re5
-                 //,re6
-                 ,re7
-                 //,re8
                 ];
     return reArray;
 }
@@ -49,13 +37,6 @@ function removeAdObj(objs){
     var reDoubleArray = initRegexDoubleArray();
     start:
     for(var obj of objs){
-        for(var idx = 0;idx < reDoubleArray.length;idx+=2){
-            if(reDoubleArray[idx].test(obj.innerText) && reDoubleArray[idx + 1].test(obj.innerText)){
-                obj.innerText = "";
-                obj.parentNode.innerText = "";
-                continue start;
-            }
-        }
         for(var re of reArray){
             if(re.test(obj.innerText)){
                 obj.innerHTML = "";
@@ -63,9 +44,14 @@ function removeAdObj(objs){
                 continue start;
             }
         }
-    }
-
-    
+        for(var idx = 0;idx < reDoubleArray.length;idx+=2){
+            if(reDoubleArray[idx].test(obj.innerText) && reDoubleArray[idx + 1].test(obj.innerText)){
+                obj.innerText = "";
+                obj.parentNode.innerText = "";
+                continue start;
+            }
+        }
+    }  
 }
 
 
