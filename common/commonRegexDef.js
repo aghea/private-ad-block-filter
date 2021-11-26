@@ -1,9 +1,10 @@
-//version       1.4.1.1
+//version       1.4.1.2
 function initRegexArray(){
     ///[仅减]\d{1,4}(\.[0-9]{1,2})?元/,
     //var re1=/[\u4ec5\u51cf]\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    var re1=/\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //1-4元
-    var re2=/\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    //var re2=/\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //立减,到手,低至,大促,预售,包邮,直降,抄底,秒杀，狂促
     var re3=/\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u6284\u5e95|\u79d2\u6740|\u72c2\u4fc3/;
     //(xx.xx折)
@@ -16,8 +17,8 @@ function initRegexArray(){
     //仅需xx元
     //var re8=/\u4ec5\u9700\d{1,4}(\.[0-9]{1,2})?\u5143/;
 
-    var reArray=[//re1
-                 ,re2
+    var reArray=[re1
+                 //,re2
                  ,re3
                  ,re4
                  //,re5
