@@ -10,12 +10,15 @@ function initRegexArray(){
     var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0|\u5434\u4eac/;
     //长津湖战狼
     var re5=/\u957f\u6d25\u6e56|\u6218\u72fc/;
-
+    //理想ONE 大众 奔驰 宝马 丰田 五菱宏光
+    var re6=/\u7406\u60f3\u004f\u004e\u0045|\u5927\u4f17|\u5954\u9a70|\u5b9d\u9a6c|\u4e30\u7530|\u4e94\u83f1\u5b8f\u5149/;
+    
     var reArray=[re1
                  ,re2
                  ,re3
                  ,re4
                  ,re5
+                 ,re6
                 ];
     return reArray;
 }
