@@ -17,3 +17,5 @@ domp4.cc##.footer.cclear
 mp4er.cc###right-menu
 mp4er.cc###left-menu
 mp4er.cc##.error
+mp4er.cc##.col-md-5
+mp4er.cc##.col-md-7
