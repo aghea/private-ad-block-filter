@@ -21,3 +21,5 @@ mp4er.cc##.col-md-5
 mp4er.cc##.col-md-7
 btbdys.com##.col-md-7
 btbdys.com##.col-md-5
+52bdys.com##.col-md-7
+52bdys.com##.col-md-5
