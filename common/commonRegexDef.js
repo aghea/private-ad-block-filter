@@ -6,14 +6,14 @@ function initRegexArray(){
     var re2=/\u9650\u65f6|\u65b0\u4f4e|\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u6284\u5e95|\u79d2\u6740|\u72c2\u4fc3/;
     //xx.xx折
     var re3=/\d{1,2}(\.[0-9]{1,2})\u6298/;
-    //罗永浩李国庆周鸿祎董明珠吴京
-    var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0|\u5434\u4eac/;
+    //罗永浩李国庆周鸿祎董明珠吴京余承东
+    var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0|\u5434\u4eac|\u4f59\u627f\u4e1c/;
     //长津湖战狼
     var re5=/\u957f\u6d25\u6e56|\u6218\u72fc/;
     //理想ONE 大众 奔驰 宝马 丰田 五菱宏光 奥迪 蔚来 本田 思域 奇瑞
     var re6=/\u7406\u60f3\u004f\u004e\u0045|\u5927\u4f17|\u5954\u9a70|\u5b9d\u9a6c|\u4e30\u7530|\u4e94\u83f1\u5b8f\u5149|\u5965\u8fea|\u851a\u6765|\u672c\u7530|\u601d\u57df|\u5947\u745e/;
-    //荣耀
-    var re7=/\u8363\u8000/;
+    //荣耀 realme Redmi
+    var re7=/\u8363\u8000|\u0072\u0065\u0061\u006c\u006d\u0065|\u0052\u0065\u0064\u006d\u0069/;
     
     var reArray=[re1
                  ,re2
