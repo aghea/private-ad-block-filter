@@ -7,13 +7,13 @@
 // @namespace         ageha.com/ithome
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.2.0.0
+// @version           1.2.0.1
 // @grant             none
 // @include           *://www.ithome.com/*
 // @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/ithome.com.user.js
 // @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/ithome.com.user.js
 // @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/ithome.com.user.js
-// @require           https://gitee.com/ageha/ad-block-filter/raw/master/common/commonRegexDef.js
+// @require           https://gitee.com/ageha/ad-block-filter/raw/master/common/commonRegexDef.user.js
 // ==/UserScript==
 
 (function () {
