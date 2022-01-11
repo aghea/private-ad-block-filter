@@ -36,7 +36,10 @@ mydrivers.com##div[style="width:890px;height:90px; margin: auto; padding-top: 5p
 mydrivers.com##div[style="margin:0 auto; width:1390px; height:100px;"]
 mydrivers.com##div[style="height:40px"]
 mydrivers.com##div[style="height:50px;"]
-mydrivers.com##div[style="height: 60px;"]
+mydrivers.com##div[style="height:60px;"]
+mydrivers.com##div[style="width:890px;height:100px; margin: auto; padding-top: 5px;padding-bottom: 10px;"]
+mydrivers.com##div[style="width:890px;"]
+mydrivers.com##div[style="width:728px;"]
 mydrivers.com###footer
 mydrivers.com###commentsiframe
 mydrivers.com##.ewmer2
