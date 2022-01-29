@@ -59,6 +59,7 @@ mydrivers.com##.pathway
 mydrivers.com##.main_right
 mydrivers.com##.nav
 mydrivers.com##.yuandan
+mydrivers.com##.chunjie
 mydrivers.com##.hdnewyear
 mydrivers.com##.xianguan
 mydrivers.com##.zhongqiu
