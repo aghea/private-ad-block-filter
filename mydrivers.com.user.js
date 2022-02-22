@@ -42,6 +42,15 @@ function removeCommentsiframe(){
   var iframe = document.getElementById("commentsiframe");
   iframe.parentNode.removeChild(iframe);
 }
+function removeYjgg(){
+    var spans = document.getElementsByTagName("span");
+    for(var span of spans){
+        if(span.innerText.indexOf("硬件狗狗") > -1){
+            var b = span.parentNode;
+            b.parentNode.removeChild(b);
+        }
+    }
+}
 function removeGoods(){
   var block = "商品信息>>";
   var flag = true;
@@ -84,6 +93,7 @@ function newsInfoPage(){
   modifyDivWidth();
   hidetj_bottom();
   removeCommentsiframe();
+  removeYjgg();
 }
 function commonFun(){
 
