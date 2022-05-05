@@ -78,3 +78,5 @@ news.mydrivers.com##.adds
 news.mydrivers.com##.news_df
 news.mydrivers.com##.news_zc
 news.mydrivers.com##.page_article
+mydrivers.com##.main_title
+news.mydrivers.com##div[style="height: 60px;"]
