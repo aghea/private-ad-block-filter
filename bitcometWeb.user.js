@@ -1,19 +1,19 @@
 // ==UserScript==
 // @name         BitComet web 自动跳转
-// @homepageURL       https://gitee.com/ageha/ad-block-filter
-// @homepage          https://gitee.com/ageha/ad-block-filter
-// @website           https://gitee.com/ageha/ad-block-filter
+// @homepageURL       https://github.com/aghea/private-ad-block-filter
+// @homepage          https://github.com/aghea/private-ad-block-filter
+// @website           https://github.com/aghea/private-ad-block-filter
 // @namespace    ageha.com/bitcometWeb
-// @version      0.1
+// @version      1.0
 // @description  BitComet web 自动跳转
 // @author       You
 // @match        http://192.168.5.101:7072/panel/task_add_httpftp*
 // @match        http://agiha.vicp.net:7072/panel/task_add_httpftp*
 // @icon         https://www.google.com/s2/favicons?domain=5.101
 // @license           BSD 3-clause Clear License
-// @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/bitcometWeb.user.js
-// @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/bitcometWeb.user.js
-// @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/bitcometWeb.user.js
+// @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/bitcometWeb.user.js
+// @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/bitcometWeb.user.js
+// @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/bitcometWeb.user.js
 // @grant        none
 // ==/UserScript==
 
