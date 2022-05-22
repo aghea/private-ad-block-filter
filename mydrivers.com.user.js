@@ -1,19 +1,19 @@
 // ==UserScript==
 // @name              关闭mydrivers各种广告
-// @homepageURL       https://gitee.com/ageha/ad-block-filter
-// @homepage          https://gitee.com/ageha/ad-block-filter
-// @website           https://gitee.com/ageha/ad-block-filter
+// @homepageURL       https://github.com/aghea/private-ad-block-filter
+// @homepage          https://github.com/aghea/private-ad-block-filter
+// @website           https://github.com/aghea/private-ad-block-filter
 // @description       关闭mydrivers上硬广告
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.8.0.1
+// @version           1.9.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
-// @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
-// @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
-// @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/mydrivers.com.user.js
-// @require           https://gitee.com/ageha/ad-block-filter/raw/master/common/commonRegexDef.user.js
+// @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
+// @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
+// @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
+// @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
 // ==/UserScript==
 function removeAd(){
   var spans = document.getElementsByClassName("titl");
