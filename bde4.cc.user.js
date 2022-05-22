@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name              Block bde4 ads
-// @homepageURL       https://gitee.com/ageha/ad-block-filter
-// @homepage          https://gitee.com/ageha/ad-block-filter
-// @website           https://gitee.com/ageha/ad-block-filter
+// @homepageURL       https://github.com/aghea/private-ad-block-filter/
+// @homepage          https://github.com/aghea/private-ad-block-filter/
+// @website           https://github.com/aghea/private-ad-block-filter/
 // @description       关闭bde4广告
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.2.0.0
+// @version           1.3.0.0
 // @grant             none
 // @include           *://bde4.com/*
 // @include           *://bde4.cc/*
@@ -21,10 +21,10 @@
 // @include           *://mp4er.cc/*
 // @include           *://*.52bdys.com/*
 // @include           *://*.btbdys.com/*
-// @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
-// @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
-// @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/bde4.cc.user.js
-// @require           https://gitee.com/ageha/ad-block-filter/raw/master/common/commonFun.js
+// @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
+// @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
+// @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
+// @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonFun.js
 // ==/UserScript==
 function removeAdBlock(){
   var centers = document.getElementsByTagName("center");
