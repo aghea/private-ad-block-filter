@@ -1,18 +1,18 @@
 // ==UserScript==
 // @name         移除mydrivers最后一张无用图片
-// @homepageURL       https://gitee.com/ageha/ad-block-filter
-// @homepage          https://gitee.com/ageha/ad-block-filter
-// @website           https://gitee.com/ageha/ad-block-filter
-// @version      0.1
+// @homepageURL       https://github.com/aghea/private-ad-block-filter
+// @homepage          https://github.com/aghea/private-ad-block-filter
+// @website           https://github.com/aghea/private-ad-block-filter
+// @version      1.0
 // @description  移除mydrivers最后一张无用图片
 // @author       ageha
 // @license           BSD 3-clause Clear License
 // @match        https://news.mydrivers.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
-// @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/removeMydriversPic.user.js
-// @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/removeMydriversPic.user.js
-// @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/removeMydriversPic.user.js
+// @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversPic.user.js
+// @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversPic.user.js
+// @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversPic.user.js
 
 // ==/UserScript==
 function removeImg(){
