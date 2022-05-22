@@ -2,7 +2,7 @@
 ! Title: ageha's yyets Filter
 ! Last Modified: 7 Feb 2021 12:10 UTC
 ! Expires: 4 days (update frequency)
-! Homepage: https://gitee.com/ageha/ad-block-filter/
+! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
 !
 !-----------------------General advert blocking filters-----------------------!
