@@ -1,18 +1,18 @@
 // ==UserScript==
 // @name              block yyets
-// @homepageURL       https://gitee.com/ageha/ad-block-filter
-// @homepage          https://gitee.com/ageha/ad-block-filter
-// @website           https://gitee.com/ageha/ad-block-filter
+// @homepageURL       https://github.com/aghea/private-ad-block-filter
+// @homepage          https://github.com/aghea/private-ad-block-filter
+// @website           https://github.com/aghea/private-ad-block-filter
 // @description       关闭人人影视上yyets下载器链接
 // @namespace         ageha.com/yyets
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.1.1
+// @version           1.2.0
 // @grant             none
 // @include           *://www.rrys2020.com/*
-// @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/yyets.com.user.js
-// @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/yyets.com.user.js
-// @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/yyets.com.user.js
+// @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/yyets.com.user.js
+// @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/yyets.com.user.js
+// @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/yyets.com.user.js
 // ==/UserScript==
 
 (function () {
