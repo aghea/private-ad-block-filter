@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name              Common Regex Def
-// @homepageURL       https://gitee.com/ageha/ad-block-filter
-// @homepage          https://gitee.com/ageha/ad-block-filter
-// @website           https://gitee.com/ageha/ad-block-filter
+// @homepageURL       https://github.com/aghea/private-ad-block-filter
+// @homepage          https://github.com/aghea/private-ad-block-filter
+// @website           https://github.com/aghea/private-ad-block-filter
 // @description       通用规则符
 // @namespace         ageha.com/common
 // @author            ageha
@@ -10,10 +10,10 @@
 // @version           1.2.0.0
 // @grant             none
 // @include           *://*.*.*//*
-// @updateURL         https://gitee.com/ageha/ad-block-filter/raw/master/common/commonRegexDef.user.js
-// @downloadURL       https://gitee.com/ageha/ad-block-filter/raw/master/common/commonRegexDef.user.js
-// @installURL        https://gitee.com/ageha/ad-block-filter/raw/master/common/commonRegexDef.user.js
-// @require           https://gitee.com/ageha/ad-block-filter/raw/master/common/commonFun.js
+// @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
+// @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
+// @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
+// @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonFun.js
 function initRegexArray(){
     ///\d{1,4}(\.[0-9]{1,2})?元/,
     var re1=/\d{1,4}(\.[0-9]{1,2})?\u5143/;
