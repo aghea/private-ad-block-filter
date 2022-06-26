@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.2.0.0
+// @version           1.3.0.0
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -29,8 +29,8 @@ function initRegexArray(){
     var re6=/\u7406\u60f3\u004f\u004e\u0045|\u5927\u4f17|\u5954\u9a70|\u5b9d\u9a6c|\u4e30\u7530|\u4e94\u83f1|\u5b8f\u5149|\u5965\u8fea|\u851a\u6765|\u672c\u7530|\u601d\u57df|\u5947\u745e|\u957f\u57ce\u5766\u514b|\u96f7\u514b\u8428\u65af|\u5317\u4eac\u73b0\u4ee3|\u6bd4\u4e9a\u8fea|\u957f\u5b89\u0055\u004e\u0049|\u8499\u8fea\u6b27|\u6c14\u56ca|\u7406\u60f3\u6c7d\u8f66|\u7406\u60f3\u004c\u0039|\u54c8\u5f17\u9177\u72d7|\u5766\u514b\u0033\u0030\u0030|\u9886\u514b\u0030/;
     //荣耀 realme Redmi
     var re7=/\u8363\u8000|\u0072\u0065\u0061\u006c\u006d\u0065|\u0052\u0065\u0064\u006d\u0069/;
-    //百公里耗油 SUV
-    var re8=/\u767e\u516c\u91cc\u8017\u6cb9|\u0053\u0055\u0056/;
+    //百公里耗油 SUV 百公里油耗
+    var re8=/\u767e\u516c\u91cc\u8017\u6cb9|\u0053\u0055\u0056|\u767e\u516c\u91cc\u6cb9\u8017/;
     
     var reArray=[re1
                  ,re2
