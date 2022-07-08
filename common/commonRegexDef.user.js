@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.3.7.1
+// @version           1.4.0.0
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -15,12 +15,12 @@
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonFun.js
 function initRegexArray(){
-    ///\d{1,4}(\.[0-9]{1,2})?元/,
-    var re1=/\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    ///\d{1,4}(\.[0-9]{1,2})万?元?起?折/,
+    var re1=/\d{1,4}(\.[0-9]{1,2})?\u4e07?\u5143?\u8d77?\u6298?/;
     //限时 新低 立减 到手 低至 大促 预售 包邮 直降 抄底 秒杀 狂促
     var re2=/\u9650\u65f6|\u65b0\u4f4e|\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u6284\u5e95|\u79d2\u6740|\u72c2\u4fc3/;
     //xx.xx折
-    var re3=/\d{1,2}(\.[0-9]{1,2})\u6298/;
+    //var re3=/\d{1,2}(\.[0-9]{1,2})\u6298/;
     //罗永浩李国庆周鸿祎董明珠吴京余承东徐直军
     var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0|\u5434\u4eac|\u4f59\u627f\u4e1c|\u5f90\u76f4\u519b/;
     //长津湖战狼
@@ -32,26 +32,26 @@ function initRegexArray(){
     //百公里耗油 SUV 百公里油耗 零百加速 混动
     var re8=/\u767e\u516c\u91cc\u8017\u6cb9|\u0053\u0055\u0056|\u767e\u516c\u91cc\u6cb9\u8017|\u96f6\u767e\u52a0\u901f|\u6df7\u52a8/;
     //数字 万元起
-    var re9=/\d{1,2}(\.[0-9]{1,2})\u4e07\u5143?\u8d77/;
+    //var re9=/\d{1,2}(\.[0-9]{1,2})\u4e07\u5143?\u8d77/;
     
     var reArray=[re1
                  ,re2
-                 ,re3
+                 //,re3
                  ,re4
                  ,re5
                  ,re6
                  ,re7
                  ,re8
-                 ,re9
+                 //,re9
                 ];
     return reArray;
 }
     
 function initRegexDoubleArray(){
     //京东 天猫 淘宝 商超 拼多多
-    var chuxiao =/\u4eac\u4e1c|\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85|\u62fc\u591a\u591a/;
+    //var chuxiao =/\u4eac\u4e1c|\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85|\u62fc\u591a\u591a/;
     //数字元
-    var yuan =/\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    //var yuan =/\d{1,4}(\.[0-9]{1,2})?\u5143/;
     //京东|网易|百度|腾讯|芒果|优酷|爱奇艺
     var batName =/\u4eac\u4e1c|\u7f51\u6613|\u767e\u5ea6|\u817e\u8baf|\u8292\u679c|\u4f18\u9177|\u7231\u5947\u827a/;
     //会员
@@ -60,8 +60,8 @@ function initRegexDoubleArray(){
     var huawei = /\u534e\u4e3a/;
     //造车
     var mkcar = /\u9020\u8f66/;
-    var reDoubleArray=[chuxiao,yuan
-                       ,batName,batMember
+    var reDoubleArray=[//chuxiao,yuan
+                        batName,batMember
                        ,huawei,mkcar
                         ];
     return reDoubleArray;
