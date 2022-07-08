@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.3.7.0
+// @version           1.3.7.1
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -32,7 +32,7 @@ function initRegexArray(){
     //百公里耗油 SUV 百公里油耗 零百加速 混动
     var re8=/\u767e\u516c\u91cc\u8017\u6cb9|\u0053\u0055\u0056|\u767e\u516c\u91cc\u6cb9\u8017|\u96f6\u767e\u52a0\u901f|\u6df7\u52a8/;
     //数字 万元起
-    var re9=/\d{1,2}(\.[0-9]{1,2})\u4e07\u5143\u8d77/;
+    var re9=/\d{1,2}(\.[0-9]{1,2})\u4e07\u5143?\u8d77/;
     
     var reArray=[re1
                  ,re2
