@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.5.0.1
+// @version           1.5.0.2
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -15,12 +15,12 @@
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonFun.js
 function initRegexArray(){
-    ///\d{1,4}(\.[0-9]{1,2})万?元起?折/,
-    var re1=/\d{1,4}(\.[0-9]{1,2})?\u0020?\u4e07?\u5143\u8d77?\u6298?/;
+    ///\d{1,4}(\.[0-9]{1,2})万?元起?/,
+    var re1=/\d{1,4}(\.[0-9]{1,2})?\u0020?\u4e07?\u5143\u8d77?/;
     //限时 新低 立减 到手 低至 大促 预售 包邮 直降 抄底 秒杀 狂促
     var re2=/\u9650\u65f6|\u65b0\u4f4e|\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u6284\u5e95|\u79d2\u6740|\u72c2\u4fc3/;
     //xx.xx折
-    //var re3=/\d{1,2}(\.[0-9]{1,2})\u6298/;
+    var re3=/\d{1,2}(\.[0-9]{1,2})\u6298/;
     //罗永浩李国庆周鸿祎董明珠吴京余承东徐直军
     var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0|\u5434\u4eac|\u4f59\u627f\u4e1c|\u5f90\u76f4\u519b/;
     //长津湖战狼
@@ -36,7 +36,7 @@ function initRegexArray(){
     
     var reArray=[re1
                  ,re2
-                 //,re3
+                 ,re3
                  ,re4
                  ,re5
                  ,re6
