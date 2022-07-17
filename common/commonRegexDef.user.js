@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.5.0.2
+// @version           1.5.0.3
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -58,8 +58,8 @@ function initRegexDoubleArray(){
     var batMember =/\u4f1a\u5458/;
     //华为
     var huawei = /\u534e\u4e3a/;
-    //造车
-    var mkcar = /\u9020\u8f66/;
+    //造车|问界
+    var mkcar = /\u9020\u8f66|\u95ee\u754c\/;
     var reDoubleArray=[//chuxiao,yuan
                         batName,batMember
                        ,huawei,mkcar
