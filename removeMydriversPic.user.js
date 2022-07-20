@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      3.0
+// @version      4.0
 // @description  移除mydrivers最后一张无用图片和评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -15,12 +15,24 @@
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversPic.user.js
 
 // ==/UserScript==
-function removePLinkByTag(tag){
-    var divs = document.getElementsByClassName("news_info");
-    var div = divs[0];
+var divs = document.getElementsByClassName("news_info");
+var div = divs[0];
+function getLastPlink(){
     var plinks = div.getElementsByTagName("p");
     var lastPlink = div.getElementsByClassName("end");
     var obj = lastPlink[0].previousSibling.previousSibling;
+    return obj;
+}
+function removeByQuestionMark(){
+    var diaocha_body = document.getElementById("diaocha_body");
+    var fj= diaocha_body.previousSibling.previousSibling;
+    var ch = fj.innerText.substr(-1);
+    if( ch == "?"||ch =="？"){
+        div.removeChild(fj);
+    }
+}
+function removePLinkByTag(tag){
+    var obj = getLastPlink();
     if(obj.innerHTML.indexOf(tag)>-1){
         div.removeChild(obj);
     }
@@ -39,8 +51,10 @@ function removeOp(){
         //你喜欢|吗？
         /\u4f60\u559c\u6b22/,/\u5417\uff1f/
     ];
+    /*
     var divs = document.getElementsByClassName("news_info");
     var div = divs[0];
+    */
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
         for(var jdx = 0; jdx <regArray.length ; jdx+=2){
@@ -55,4 +69,5 @@ function removeOp(){
     removeImg();
     removeOp();
     removeStrong();
+    removeByQuestionMark();
 })();
