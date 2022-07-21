@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.5.0.5
+// @version           1.5.0.6
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -31,8 +31,8 @@ function initRegexArray(){
     var re7=/\u8363\u8000|\u0072\u0065\u0061\u006c\u006d\u0065|\u0052\u0065\u0064\u006d\u0069/;
     //百公里耗油 SUV 百公里油耗 零百加速 混动
     var re8=/\u767e\u516c\u91cc\u8017\u6cb9|\u0053\u0055\u0056|\u767e\u516c\u91cc\u6cb9\u8017|\u96f6\u767e\u52a0\u901f|\u6df7\u52a8/;
-    //问界M 极氪
-    //var re9=/\u95ee\u754c\u004d|\u6781\u6c2a/;
+    ///\d{1,4}(\.[0-9]{1,2})万起/,
+    var re9=/\d{1,4}(\.[0-9]{1,2})?\u0020?\u4e07\u8d77/;
     
     var reArray=[re1
                  ,re2
