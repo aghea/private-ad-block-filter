@@ -42,7 +42,7 @@ function initRegexArray(){
                  ,re6
                  ,re7
                  ,re8
-                 //,re9
+                 ,re9
                 ];
     return reArray;
 }
