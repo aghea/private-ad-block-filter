@@ -26,7 +26,7 @@ function getLastPlink(){
 function removeByQuestionMark(){
     var diaocha_body = document.getElementById("diaocha_body");
     var fj= diaocha_body.previousSibling.previousSibling;
-    alert(fj.innerText);
+    //alert(fj.innerText);
     var ch = fj.innerText.substr(-1);
     if( ch == "?"||ch =="？"){
         div.removeChild(fj);
@@ -56,10 +56,6 @@ function removeOp(){
         //你怎么看|评论区
         /\u4f60\u600e\u4e48\u770b/,/\u8bc4\u8bba\u533a/
     ];
-    /*
-    var divs = document.getElementsByClassName("news_info");
-    var div = divs[0];
-    */
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
         for(var jdx = 0; jdx <regArray.length ; jdx+=2){
