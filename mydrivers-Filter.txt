@@ -83,3 +83,4 @@ news.mydrivers.com##div[style="height: 60px;"]
 news.mydrivers.com##.diaocha
 mydrivers.com##.pce_list
 news.mydrivers.com##.buylist_box
+news.mydrivers.com##.tgbaobei
