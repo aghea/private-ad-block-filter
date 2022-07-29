@@ -47,14 +47,17 @@ function removeStrong(){
 }
 function removeOp(){
     var regArray = [
-        //对此|你怎么看
-        /\u5bf9\u6b64/,/\u4f60\u600e\u4e48\u770b/
+        //对此|怎么看
+        /\u5bf9\u6b64/,/\u600e\u4e48\u770b/
         ,
         //你喜欢|吗？
         /\u4f60\u559c\u6b22/,/\u5417\uff1f/
         ,
-        //你怎么看|评论区
-        /\u4f60\u600e\u4e48\u770b/,/\u8bc4\u8bba\u533a/
+        //怎么看|评论区
+        /\u600e\u4e48\u770b/,/\u8bc4\u8bba\u533a/
+        ,
+        //大家|怎么看
+        /\u5927\u5bb6/,/\u600e\u4e48\u770b/
     ];
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
