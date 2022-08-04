@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      4.3.0.1
+// @version      4.3.0.2
 // @description  移除mydrivers最后一张无用图片和评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -47,17 +47,14 @@ function removeStrong(){
 }
 function removeOp(){
     var regArray = [
-        //对此|怎么看
-        /\u5bf9\u6b64/,/\u600e\u4e48\u770b/
+        //对此|大家|你,怎么看
+        /\u5bf9\u6b64|\u5927\u5bb6|\u4f60/,/\u600e\u4e48\u770b/
         ,
         //你喜欢|吗？
         /\u4f60\u559c\u6b22/,/\u5417\uff1f/
         ,
         //怎么看|评论区
         /\u600e\u4e48\u770b/,/\u8bc4\u8bba\u533a/
-        ,
-        //大家|怎么看
-        /\u5927\u5bb6/,/\u600e\u4e48\u770b/
     ];
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
@@ -77,6 +74,7 @@ function removeOp1(){
         ,/\u600e\u4e48[\u770b|\u6837][\uff1f|\u003f]/
     ];
     var plinks = div.getElementsByTagName("p");
+    //for(var idx = plinks.length - 1; idx > -1 ; idx --){
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
         for(var jdx = 0; jdx <regArray.length ; jdx++){
             if(regArray[jdx].test(plinks[idx].innerHTML)){
