@@ -74,9 +74,17 @@ function removeOp1(){
         //吗？
         /\u5417\uff1f$/
         ,/\u5417\u003f$/
+        //怎么看|样？
+        ,/\u600e\u4e48[\u770b|\u6837]\uff1f$/
+        ,/\u600e\u4e48[\u770b|\u6837]\u003f$/
+        /*
         //怎么看？
         ,/\u600e\u4e48\u770b\uff1f$/
         ,/\u600e\u4e48\u770b\u003f$/
+        //怎么样？
+        ,/\u600e\u4e48\u6837\uff1f$/
+        ,/\u600e\u4e48\u6837\u003f$/   
+        */
     ];
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
