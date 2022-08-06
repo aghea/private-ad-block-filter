@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      4.3.0.2
+// @version      4.3.1.0
 // @description  移除mydrivers最后一张无用图片和评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -32,20 +32,20 @@ function removeByQuestionMark(){
         div.removeChild(fj);
     }
 }
-function getPLinkByTag(tag){
+function removePLinkByTag(tag){
     var obj = getLastPlink();
     var text = obj.innerHTML.toString();
     if(text.indexOf(tag)>-1){
         div.removeChild(obj);
     }
 }
-function removeImg(){
-    getPLinkByTag("img");
+function removeLastImg(){
+    removePLinkByTag("img");
 }
 function removeStrong(){
-    getPLinkByTag("strong");
+    removePLinkByTag("strong");
 }
-function removeOp(){
+function removeOpByDoubleChk(){
     var regArray = [
         //对此|大家|你,怎么看
         /\u5bf9\u6b64|\u5927\u5bb6|\u4f60/,/\u600e\u4e48\u770b/
@@ -85,11 +85,11 @@ function removeOp1(){
     }
 }
 (function() {
-    removeImg();
+    removeLastImg();
     if(removeOp1()){
         return;
     }
-    removeOp();
+    removeOpByDoubleChk();
     removeStrong();
     removeByQuestionMark();
 })();
