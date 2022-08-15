@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      4.3.1.3
+// @version      4.3.2.0
 // @description  移除mydrivers最后一张无用图片和评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -59,7 +59,7 @@ function removeOpByDoubleChk(){
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
         for(var jdx = 0; jdx <regArray.length ; jdx+=2){
-            if(regArray[jdx].test(plinks[idx].innerHTML)&&regArray[jdx+1].test(plinks[idx].innerHTML)){
+            if(regArray[jdx].test(plinks[idx].innerText)&&regArray[jdx+1].test(plinks[idx].innerText)){
                 div.removeChild(plinks[idx]);
                 break;
             }
@@ -76,8 +76,8 @@ function removeOp1(){
         ,/\u5462[\uff1f|\u003f]$/
         //怎么看|样？
         ,/\u600e\u4e48[\u770b|\u6837][\uff1f|\u003f]/
-        //留言讨论。
-        ,/\u7559\u8a00\u8ba8\u8bba\u3002$/
+        //留言|点赞|分享
+        ,/\u7559\u8a00|\u70b9\u8d5e|\u5206\u4eab/
         //觉得呢？
         ,/\u89c9\u5f97\u5462[\uff1f|\u003f]$/
     ];
@@ -85,7 +85,7 @@ function removeOp1(){
     //for(var idx = plinks.length - 1; idx > -1 ; idx --){
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
         for(var jdx = 0; jdx <regArray.length ; jdx++){
-            if(regArray[jdx].test(plinks[idx].innerHTML)){
+            if(regArray[jdx].test(plinks[idx].innerText)){
                 div.removeChild(plinks[idx]);
                 return true;
             }
