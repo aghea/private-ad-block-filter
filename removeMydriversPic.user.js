@@ -107,8 +107,8 @@ function removeOp1(){
         ,/\u7559\u8a00|\u70b9\u8d5e|\u5206\u4eab/
         //如何？
         ,/\u5982\u4f55[\uff1f|\u003f]$/
-        //再等等|看看
-        ,/\u518d\u7b49\u7b49[\uff1f|\u003f]$|\u518d\u770b\u770b[\uff1f|\u003f]$/
+        //再等等|看看|想想|观察观察
+        ,/\u518d\u7b49\u7b49[\uff1f|\u003f]$|\u518d\u770b\u770b[\uff1f|\u003f]$|\u518d\u60f3\u60f3[\uff1f|\u003f]$|\u518d\u89c2\u5bdf\u89c2\u5bdf[\uff1f|\u003f]$/
     ];
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
