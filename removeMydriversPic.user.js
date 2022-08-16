@@ -108,8 +108,7 @@ function removeOp1(){
         //如何？
         ,/\u5982\u4f55[\uff1f|\u003f]$/
         //再等等|看看
-        ,/\u518d\u7b49\u7b49[\uff1f|\u003f]$/
-        ,/\u518d\u770b\u770b[\uff1f|\u003f]$/
+        ,/\u518d\u7b49\u7b49[\uff1f|\u003f]$|\u518d\u770b\u770b[\uff1f|\u003f]$/
     ];
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
