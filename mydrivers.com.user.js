@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.9.0.0
+// @version           1.10.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -87,6 +87,13 @@ function removeGoods(){
     }
   }
 }
+function removeH4(){
+  var mainLeft = document.getElementsByClassName("main_left");
+  var h4 = mainLeft[0].getElementsByTagName("h4");
+  for (var h of h4){
+    mainLeft[0].removeChild(h);
+  }
+}
 function homePage(){
   removeAd();
 }
@@ -95,6 +102,7 @@ function newsInfoPage(){
   hidetj_bottom();
   removeCommentsiframe();
   removeYjgg();
+  removeH4();
 }
 function commonFun(){
 
