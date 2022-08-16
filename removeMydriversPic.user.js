@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      4.3.3.0
+// @version      4.4.0.0
 // @description  移除mydrivers最后一张无用图片和评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -20,7 +20,12 @@ var div = divs[0];
 function getLastPlink(){
     var plinks = div.getElementsByTagName("p");
     var lastPlink = div.getElementsByClassName("end");
-    var obj = lastPlink[0].previousSibling.previousSibling;
+    var obj = null;
+    try{
+      obj = lastPlink[0].previousSibling.previousSibling;
+    }catch(err){
+        //console.log(err);
+    }
     return obj;
 }
 function removeByQuestionMark(){
@@ -33,11 +38,13 @@ function removeByQuestionMark(){
     }
 }
 function removePLinkByTag(tag){
-    var obj = getLastPlink();
-    var text = obj.innerHTML.toString();
-    if(text.indexOf(tag)>-1){
-        div.removeChild(obj);
-    }
+    try{
+        var obj = getLastPlink();
+        var text = obj.innerHTML.toString();
+        if(text.indexOf(tag)>-1){
+            div.removeChild(obj);
+        }
+    }catch(err){}
 }
 function removeLastImg(){
     removePLinkByTag("img");
