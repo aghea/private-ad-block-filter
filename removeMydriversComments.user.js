@@ -109,7 +109,7 @@ function removeMinHigh(){
 function removeStrong(){
     removePLinkByTag("strong");
 }
-fuction removeDivWidth(){
+function removeDivWidth(){
     var main_box = document.getElementsByClassName("main_box");
     main_box[0].style.width ="0px";
     var main_left = document.getElementsByClassName("main_left");
