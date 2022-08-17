@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      4.4.1.2
+// @version      4.5.0.0
 // @description  移除mydrivers最后一张无用图片和评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -120,11 +120,16 @@ function removeOp1(){
         }
     }
 }
+function removeMinHigh(){
+    var main_left = document.getElementsByClassName("main_left");
+    main_left[0].style.minHeight="0px";
+}
 (function() {
     removeLastImg();
     if(removeOp1()){
         return;
     }
+    removeMinHigh();
     removeOpByDoubleChk();
     removeStrong();
     removeByQuestionMark();
