@@ -126,10 +126,10 @@ function removeMinHigh(){
 }
 (function() {
     removeLastImg();
+    removeMinHigh();
     if(removeOp1()){
         return;
     }
-    removeMinHigh();
     removeOpByDoubleChk();
     removeStrong();
     removeByQuestionMark();
