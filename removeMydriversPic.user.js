@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      4.5.0.0
+// @version      4.5.0.1
 // @description  移除mydrivers最后一张无用图片和评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -15,6 +15,7 @@
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversPic.user.js
 
 // ==/UserScript==
+var debug = false;
 var divs = document.getElementsByClassName("news_info");
 var div = divs[0];
 function getLastPlink(){
@@ -24,7 +25,7 @@ function getLastPlink(){
     try{
       obj = lastPlink[0].previousSibling.previousSibling;
     }catch(err){
-        //console.log(err);
+        if(debug)console.log(err);
     }
     return obj;
 }
@@ -36,7 +37,9 @@ function removeByQuestionMark(){
         if( ch == "?"||ch =="？"){
             div.removeChild(fj);
         }
-    } catch (err){}
+    } catch (err){
+        if(debug)console.log(err);
+    }
 }
 function removePLinkByTag(tag){
     try{
@@ -45,7 +48,9 @@ function removePLinkByTag(tag){
         if(text.indexOf(tag)>-1){
             div.removeChild(obj);
         }
-    }catch(err){}
+    }catch(err){
+        if(debug)console.log(err);
+    }
 }
 function removeLastImg(){
     //removePLinkByTag("img");
@@ -62,8 +67,7 @@ function removeLastImg(){
               break;
           }
       }
-      //obj = plinks[plinks.length - 1];
-      console.log(err);
+      if(debug)console.log(err);
     }
     div.removeChild(obj);
 }
