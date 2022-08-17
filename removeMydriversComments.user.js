@@ -109,6 +109,12 @@ function removeMinHigh(){
 function removeStrong(){
     removePLinkByTag("strong");
 }
+fuction removeDivWidth(){
+    var main_box = document.getElementsByClassName("main_box");
+    main_box[0].style.width ="0px";
+    var main_left = document.getElementsByClassName("main_left");
+    main_left[0].style.width ="0px";
+}
 (function() {
     removeMinHigh();
     if(removeOp1()){
