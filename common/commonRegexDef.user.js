@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.5.0.7
+// @version           1.5.0.8
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -25,8 +25,8 @@ function initRegexArray(){
     var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0|\u5434\u4eac|\u4f59\u627f\u4e1c|\u5f90\u76f4\u519b|\u674e\u60f3|\u674e\u745e\u5cf0/;
     //长津湖战狼
     var re5=/\u957f\u6d25\u6e56|\u6218\u72fc/;
-    //理想ONE理想汽车 理想L{数字} 大众 奔驰 宝马 丰田 五菱 宏光 奥迪 蔚来 本田 思域 奇瑞 长城坦克 雷克萨斯 北京现代 比亚迪 长安UNI 蒙迪欧 气囊 哈弗酷狗 坦克300 领克0 零跑 小鹏 长安汽车 帝豪 北京越野 AITO问界 问界M 极氪 魏牌
-    var re6=/\u7406\u60f3[\u004f\u004e\u0045|\u6c7d\u8f66|\u004c\d]|\u5927\u4f17|\u5954\u9a70|\u5b9d\u9a6c|\u4e30\u7530|\u4e94\u83f1|\u5b8f\u5149|\u5965\u8fea|\u851a\u6765|\u672c\u7530|\u601d\u57df|\u5947\u745e|\u957f\u57ce\u5766\u514b|\u96f7\u514b\u8428\u65af|\u5317\u4eac\u73b0\u4ee3|\u6bd4\u4e9a\u8fea|\u957f\u5b89\u0055\u004e\u0049|\u8499\u8fea\u6b27|\u6c14\u56ca|\u54c8\u5f17\u9177\u72d7|\u5766\u514b\u0033\u0030\u0030|\u9886\u514b\u0030|\u96f6\u8dd1|\u5c0f\u9e4f|\u957f\u5b89\u6c7d\u8f66|\u5e1d\u8c6a|\u5317\u4eac\u8d8a\u91ce|\u0041\u0049\u0054\u004f\u95ee\u754c|\u95ee\u754c\u004d|\u6781\u6c2a|\u9b4f\u724c/;
+    //理想ONE理想汽车 理想L{数字} 大众 奔驰 宝马 丰田 五菱 宏光 奥迪 蔚来 本田 思域 奇瑞 长城坦克 雷克萨斯 北京现代 比亚迪 长安UNI 蒙迪欧 气囊 哈弗 坦克300 领克0 零跑 小鹏 长安汽车 帝豪 北京越野 AITO问界 问界M 极氪 魏牌 阿维塔
+    var re6=/\u7406\u60f3[\u004f\u004e\u0045|\u6c7d\u8f66|\u004c\d]|\u5927\u4f17|\u5954\u9a70|\u5b9d\u9a6c|\u4e30\u7530|\u4e94\u83f1|\u5b8f\u5149|\u5965\u8fea|\u851a\u6765|\u672c\u7530|\u601d\u57df|\u5947\u745e|\u957f\u57ce\u5766\u514b|\u96f7\u514b\u8428\u65af|\u5317\u4eac\u73b0\u4ee3|\u6bd4\u4e9a\u8fea|\u957f\u5b89\u0055\u004e\u0049|\u8499\u8fea\u6b27|\u6c14\u56ca|\u54c8\u5f17|\u5766\u514b\u0033\u0030\u0030|\u9886\u514b\d|\u96f6\u8dd1|\u5c0f\u9e4f|\u957f\u5b89\u6c7d\u8f66|\u5e1d\u8c6a|\u5317\u4eac\u8d8a\u91ce|\u0041\u0049\u0054\u004f\u95ee\u754c|\u95ee\u754c\u004d|\u6781\u6c2a|\u9b4f\u724c|\u963f\u7ef4\u5854/;
     //荣耀 realme Redmi
     var re7=/\u8363\u8000|\u0072\u0065\u0061\u006c\u006d\u0065|\u0052\u0065\u0064\u006d\u0069/;
     //百公里耗油 SUV 百公里油耗 零百加速 混动
