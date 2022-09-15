@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.11.0.0
+// @version           1.0.0.0
 // @grant             none
 // @include           *://www.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversAD.user.js
