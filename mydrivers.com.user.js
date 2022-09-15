@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.11.0.0
+// @version           2.0.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -15,10 +15,6 @@
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
 // ==/UserScript==
-function removeAd(){
-  var spans = document.getElementsByClassName("titl");
-  removeAdObj(spans);
-}
 
 //关闭页面闲置时间弹框
 function hidetj_bottom(){
@@ -87,7 +83,7 @@ function removeH4(){
   }
 }
 function homePage(){
-  removeAd();
+  
 }
 function newsInfoPage(){
   hidetj_bottom();
