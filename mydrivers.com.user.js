@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.0.0.0
+// @version           2.0.1.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -37,6 +37,19 @@ function removeYjgg(){
             var b = span.parentNode;
             b.parentNode.removeChild(b.nextSibling.nextSibling);
             b.parentNode.removeChild(b);
+        }
+    }
+}
+function removeDoubleEleven(){
+    //[双11|京东|天猫]红包
+    var reg = /[\u53cc\u0031\u0031|\u4eac\u4e1c|\u5929\u732b]\u7ea2\u5305/;
+    var divs = document.getElementsByClassName("news_info");
+    for (var div of divs){
+        var p_elemts = div.getElementsByTagName("p");
+        for (var idx = p_elemts.length - 1; idx > 0 ; idx--){
+            if(reg.test(p_elemts[idx].innerText)){
+               p_elemts[idx].parentNode.removeChild(p_elemts[idx]);
+            }
         }
     }
 }
@@ -90,6 +103,7 @@ function newsInfoPage(){
   removeCommentsiframe();
   removeYjgg();
   removeH4();
+  removeDoubleEleven();
 }
 function commonFun(){
 
