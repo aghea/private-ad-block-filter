@@ -88,3 +88,5 @@ news.mydrivers.com##div[style="overflow: hidden;font-size:14px;padding-top:30px;
 news.mydrivers.com##.navs_newsinfo.xg_newsinfo
 mydrivers.com###pf_bj
 mydrivers.com###pf_html
+mydrivers.com##.jdong11
+mydrivers.com##.jdong11bg
