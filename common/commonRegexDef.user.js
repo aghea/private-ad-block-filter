@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.5.0.9
+// @version           1.5.0.10
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -51,8 +51,8 @@ function initRegexArray(){
 function initRegexDoubleArray(){
     //京东 天猫 淘宝 商超 拼多多
     var chuxiao =/\u4eac\u4e1c|\u5929\u732b|\u6dd8\u5b9d|\u5546\u8d85|\u62fc\u591a\u591a/;
-    //数字元
-    var yuan =/\d{1,4}(\.[0-9]{1,2})?\u5143/;
+    //数字元|红包
+    var yuan =/\d{1,4}(\.[0-9]{1,2})?\u5143|\u7ea2\u5305/;
     //京东|网易|百度|腾讯|芒果|优酷|爱奇艺
     var batName =/\u4eac\u4e1c|\u7f51\u6613|\u767e\u5ea6|\u817e\u8baf|\u8292\u679c|\u4f18\u9177|\u7231\u5947\u827a/;
     //会员
