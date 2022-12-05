@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      1.2.1.0
+// @version      1.2.1.1
 // @description  移除mydrivers页面评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -21,14 +21,14 @@ var div = divs[0];
 //移除页面内strong文字
 function replaceStrong(){
     var text = div.innerHTML.toString();
-    var t = text.replaceAll("<strong>"," ");
-    t=t.replaceAll("</strong>"," ");
+    var t = text.replaceAll("<strong>"," ").replaceAll("</strong>"," ").replaceAll("color:#"," ");
+    //t=t.replaceAll("</strong>"," ");
     div.innerHTML=t;
 }
 //移除标红文字
-function replaceRed(){
+function replaceColorFont(){
     var text = div.innerHTML.toString();
-    var t = text.replaceAll("color:#ff0000;"," ");
+    var t = text.replaceAll("color:#"," ");
     div.innerHTML=t;
 }
 //获得最后一个p标签
