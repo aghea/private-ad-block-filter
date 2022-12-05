@@ -18,12 +18,20 @@
 var debug = false;
 var divs = document.getElementsByClassName("news_info");
 var div = divs[0];
+//移除页面内strong文字
 function replaceStrong(){
     var text = div.innerHTML.toString();
     var t = text.replaceAll("<strong>"," ");
     t=t.replaceAll("</strong>"," ");
     div.innerHTML=t;
 }
+//移除标红文字
+function replaceRed(){
+    var text = div.innerHTML.toString();
+    var t = text.replaceAll("color:#ff0000;"," ");
+    div.innerHTML=t;
+}
+//获得最后一个p标签
 function getLastPlink(){
     var plinks = div.getElementsByTagName("p");
     var lastPlink = div.getElementsByClassName("end");
@@ -35,6 +43,7 @@ function getLastPlink(){
     }
     return obj;
 }
+//移除调查
 function removeByQuestionMark(){
     var diaocha_body = document.getElementById("diaocha_body");
     try {
