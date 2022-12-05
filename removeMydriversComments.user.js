@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      1.2.0.1
+// @version      1.2.1.0
 // @description  移除mydrivers页面评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -18,6 +18,12 @@
 var debug = false;
 var divs = document.getElementsByClassName("news_info");
 var div = divs[0];
+function replaceStrong(){
+    var text = div.innerHTML.toString();
+    var t = text.replaceAll("<strong>"," ");
+    t=t.replaceAll("</strong>"," ");
+    div.innerHTML=t;
+}
 function getLastPlink(){
     var plinks = div.getElementsByTagName("p");
     var lastPlink = div.getElementsByClassName("end");
@@ -124,4 +130,5 @@ function removeDivWidth(...params){
     removeOpByDoubleChk();
     removeStrong();
     removeByQuestionMark();
+    replaceStrong();
 })();
