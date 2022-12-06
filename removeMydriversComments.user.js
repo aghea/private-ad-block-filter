@@ -134,7 +134,6 @@ function removeDivWidth(...params){
     }
 }
 (function() {
-    replaceStrong();
     removeMinHigh();
     removeDivWidth("main_box","main_left");
     if(removeOp1()){
@@ -143,5 +142,5 @@ function removeDivWidth(...params){
     removeOpByDoubleChk();
     removeStrong();
     removeByQuestionMark();
-    
+    replaceStrong();
 })();
