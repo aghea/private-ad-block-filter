@@ -20,12 +20,11 @@ var divs = document.getElementsByClassName("news_info");
 var div = divs[0];
 //移除页面内strong文字
 function replaceStrong(){
-    setTimeout(function(){
+    //setTimeout(function(){
             var text = div.innerHTML.toString();
             var t = text.replaceAll("<strong>"," ").replaceAll("</strong>"," ").replaceAll("color:#"," ");
             div.innerHTML=t;
-        },5000
-    ) ;
+    //},5000) ;
     
 }
 //移除标红文字 not use
