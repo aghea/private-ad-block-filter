@@ -136,11 +136,11 @@ function removeDivWidth(...params){
 (function() {
     removeMinHigh();
     removeDivWidth("main_box","main_left");
-    if(removeOp1()){
-        return;
-    }
     removeOpByDoubleChk();
     removeStrong();
     removeByQuestionMark();
     replaceStrong();
+    if(removeOp1()){
+        return;
+    }
 })();
