@@ -29,14 +29,13 @@ mydrivers.com##div[style="width:580px;"]
 !news.mydrivers.com##div[style="width:728px;height:90px;overflow:hidden;"]
 mydrivers.com##div[style="width:1300px;height:90px;background:#fff;"]
 mydrivers.com##div[style="width:850px;height:250px;"]
-mydrivers.com##div[style="width:1390px; height:100px;"]
+mydrivers.com##div[style="width:1390px;height:100px;"]
 mydrivers.com##div[style="height:40px"]
 mydrivers.com##div[style="height:50px;"]
 mydrivers.com##div[style="height:60px;"]
-news.mydrivers.com##div[style="height: 60px;"]
+news.mydrivers.com##div[style="height:60px;"]
 mydrivers.com##div[style="width:890px;"]
 mydrivers.com##div[style="width:728px;"]
-news.mydrivers.com##div[style="width: 580px;"]
 mydrivers.com###footer
 mydrivers.com###commentsiframe
 mydrivers.com##.ewmer2
