@@ -36,6 +36,7 @@ mydrivers.com##div[style="height:60px;"]
 news.mydrivers.com##div[style="height:60px;"]
 mydrivers.com##div[style="width:890px;"]
 mydrivers.com##div[style="width:728px;"]
+news.mydrivers.com##div[style="margin: auto;width: 1390px;height: 90px;"]
 mydrivers.com###footer
 mydrivers.com###commentsiframe
 mydrivers.com##.ewmer2
