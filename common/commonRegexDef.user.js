@@ -40,7 +40,7 @@ function initRegexArray(){
     //月交付1729辆
     var re11=/\u6708\u4ea4\u4ed8\d{1,4}[\u4e07|\u8f86]/;
     //券后xx.xx
-    var re12=/\u5c71\u6d77\u70ae\d{1,4}(\.[0-9]{1,2})?/;
+    var re12=/\u5238\u540e[\u4e00-\u9fa5]\d{1,4}(\.[0-9]{1,2})?/;
     var reArray=[re1
                  ,re2
                  ,re3
