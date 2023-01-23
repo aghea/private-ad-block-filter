@@ -7,7 +7,7 @@
 // @namespace         ageha.com/ithome
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.3.0.0
+// @version           1.4.0.0
 // @grant             none
 // @include           *://www.ithome.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/ithome.com.user.js
@@ -15,8 +15,7 @@
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/ithome.com.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
 // ==/UserScript==
-
-(function () {
+function closeLapin(){
   var lis = document.getElementsByTagName("li");
   start:
   for(var li of lis){
@@ -26,5 +25,24 @@
       continue start;
     }
   }
+}
+function closeImgLazyLoad(){
+    //img lazyload
+    var paragraph=document.getElementById("paragraph");
+    var imgs = paragraph.getElementsByTagName("img");
+    for(var img of imgs){
+        var picsrc=img.getAttribute("data-original");
+        img.src=picsrc;
+    }
+}
+function removeSpanText(){
+    var paragraph=document.getElementById("paragraph");
+    var str = paragraph.innerHTML.toString();
+    paragraph.innerHTML = str.replaceAll("<strong>"," ").replaceAll("</strong>"," ").replaceAll("color:"," ").replaceAll("accentTextColor"," ");
+}
+(function () {
+  closeLapin();
+  closeImgLazyLoad();
+  removeSpanText();
   removeAdObj(lis);
 })();
