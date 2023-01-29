@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.3.0.0
+// @version           1.3.1.0
 // @grant             none
 // @include           *://bde4.com/*
 // @include           *://bde4.cc/*
@@ -62,9 +62,21 @@ function removeComment(){
         }
     }
 }
+function loadimg(){
+    var imgs = document.getElementsByTagName("img");
+    for(var img of imgs){
+        var picsrc=img.getAttribute("data-src");
+        img.src=picsrc;
+        img.style="display: block !important;";
+        img.class="transition visible";
+        img.ref="no-referrer";
+        img.removeAttribute("referrerpolicy");
+    }
+}
 (function () {
     removeAdBlock();
     removeTips();
     removeComment();
+    loadimg();
 
 })();
