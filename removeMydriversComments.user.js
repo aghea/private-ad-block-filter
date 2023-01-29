@@ -21,7 +21,7 @@ var div = divs[0];
 //移除页面内strong文字
 function replaceStrong(){
             var text = div.innerHTML.toString();
-            var t = text.replaceAll("<strong>"," ").replaceAll("<strong ","< ").replaceAll("</strong>"," ").replaceAll("color:"," ");
+            var t = text.replaceAll("<strong>"," ").replaceAll("<strong ","&lt; ").replaceAll("</strong>"," ").replaceAll("color:"," ");
             div.innerHTML=t;
 }
 //获得最后一个p标签
