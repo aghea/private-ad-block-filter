@@ -7,21 +7,13 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.3.2.1
+// @version           1.3.3.1
 // @grant             none
-// @include           *://bde4.com/*
-// @include           *://bde4.cc/*
-// @include           *://*.bde4.com/*
-// @include           *://*.bde4.cc/*
-// @include           *://*.mp4er.com/*
-// @include           *://mp4er.com/*
-// @include           *://bde4.icu/*
-// @include           *://*.bde4.icu/*
-// @include           *://*.mp4er.cc/*
-// @include           *://mp4er.cc/*
-// @include           *://*.52bdys.com/*
-// @include           *://*.btbdys.com/*
-// @include           *://*.bdys03.com/*
+// @include           *://*.bde4.*/*
+// @include           *://*.mp4er.*/*
+// @include           *://*.52bdys.*/*
+// @include           *://*.btbdys.*/*
+// @include           *://*.bdys*.*/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
