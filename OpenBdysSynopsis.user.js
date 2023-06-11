@@ -3,13 +3,12 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter/
 // @homepage          https://github.com/aghea/private-ad-block-filter/
 // @website           https://github.com/aghea/private-ad-block-filter/
-// @version      0.2
+// @version      0.3
 // @description  bdys自动打开剧情介绍
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @match        https://www.bdys01.com/*
-// @match        https://www.bdys03.com/*
+// @match        *://*.bdys*.*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bdys01.com
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
