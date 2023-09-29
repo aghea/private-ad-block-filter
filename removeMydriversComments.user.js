@@ -22,8 +22,8 @@ var div = divs[0];
 function replaceStrong(){
             var text = div.innerHTML.toString();
             var t = text.replaceAll("<strong>"," ").replaceAll("<strong ","&lt; ").replaceAll("</strong>"," ")
-                        .replaceAll("<b>"," ").replaceAll("</b>")
-                        .replaceAll("<font color='#ff0000'>"," ").replaceAll("</font>")
+                        .replaceAll("<b>"," ").replaceAll("</b>"," ")
+                        .replaceAll("<font color='#ff0000'>"," ").replaceAll('<font color="#ff0000">'," ").replaceAll("</font>"," ")
                         .replaceAll("color:"," ");
             div.innerHTML=t;
 }
