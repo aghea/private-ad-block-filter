@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: ageha's bd2020 Filter
-! Last Modified: 17 Aug 2023 14:45 UTC
+! Last Modified: 4 Jan 2024 14:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -31,4 +31,5 @@ domp4.cc###HMRichBox
 domp4.cc###HMcoupletDivright
 domp4.cc###HMcoupletDivleft
 domp4.cc##.article-related.download_help
+mp4us.com##.article-related.download_help
 
