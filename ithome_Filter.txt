@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: ageha's ithome Filter
-! Last Modified: 10 Feb 2021 23:10 UTC
+! Last Modified: 10 Feb 2024 23:10 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -17,3 +17,9 @@ ithome.com###fi
 ithome.com###nav
 ithome.com###side_func
 ithome.com##.newsgrade
+ithome.com##.newsreward
+ithome.com##.add_comm.quickreplytb
+ithome.com##.tougao-user
+ithome.com##.info.clearfix
+ithome.com##.ad-tips
+ithome.com##.newserror
