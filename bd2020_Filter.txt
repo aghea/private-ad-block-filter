@@ -26,10 +26,17 @@ btbdys.com##.col-md-5
 bdys10.com##.col-md-7
 bdys10.com##.col-md-5
 bdys10.com##.col-12
+bdys10.com##.card-header.py-2
+bdys10.com##.card-body.text-muted
 bdys10.com##.card-body.text-cool
 domp4.cc###HMRichBox
 domp4.cc###HMcoupletDivright
 domp4.cc###HMcoupletDivleft
 domp4.cc##.article-related.download_help
 mp4us.com##.article-related.download_help
+t-rex.tzfile.com##.single-top-html
+t-rex.tzfile.com###comments
+t-rex.tzfile.com##.single-bottom-html
+t-rex.tzfile.com###secondary
+dygangs.net##td[style="line-height: 18px; word-break: break-all"]
 
