@@ -9,6 +9,7 @@
 // @author            ageha
 // @license           BSD 3-clause Clear License
 // @match        *://*.bdys*.*/*
+// @match        *://*.yjys*.*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bdys01.com
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
