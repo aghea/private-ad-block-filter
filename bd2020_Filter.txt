@@ -39,10 +39,10 @@ t-rex.tzfile.com###comments
 t-rex.tzfile.com##.single-bottom-html
 t-rex.tzfile.com###secondary
 dygangs.net##td[style="line-height: 18px; word-break: break-all"]
-yjys.com##.col-md-7
-yjys.com##.col-md-5
-yjys.com##.col-12
-yjys.com##.card-header.py-2
-yjys.com##.card-body.text-muted
-yjys.com##.card-body.text-cool
+yjys.me##.col-md-7
+yjys.me##.col-md-5
+yjys.me##.col-12
+yjys.me##.card-header.py-2
+yjys.me##.card-body.text-muted
+yjys.me##.card-body.text-cool
 
