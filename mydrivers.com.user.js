@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.1.0.0
+// @version           2.1.1.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -31,9 +31,10 @@ function removeCommentsiframe(){
   iframe.parentNode.removeChild(iframe);
 }
 function removeADSpan(){
+    var re = /\u5e7f\s*\u544a/;
     var spans = document.getElementsByTagName("span");
     for(var span of spans){
-        if(span.innerText.indexOf("广告") > -1){
+        if(re.test(span.innerText)){
             var li = span.parentNode;
             li.removeChild(span.previousSibling);
             li.removeChild(span);
