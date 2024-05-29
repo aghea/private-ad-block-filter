@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.1.1.1
+// @version           2.2.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -16,6 +16,27 @@
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
 // ==/UserScript==
 
+//关闭弹窗div
+function closePopDivAd(){
+    var divs = document.getElementsByTagName("div");
+    var array = new Array();
+    for(var idx = 0; idx < divs.length; idx++){
+        try {
+            var name = divs[idx].className;
+            if(name == "top"){
+                break;
+            } else {
+                array.push(divs[idx]);
+            }
+        }
+        catch(err) {
+        }
+    }
+    var parent = array[array.length - 1].parentNode;
+    for (idx = array.length - 1 ; idx > -1; idx--){
+        parent.removeChild(array[idx]);
+    }
+}
 //关闭页面闲置时间弹框
 function hidetj_bottom(){
     var div = document.getElementsByClassName("tj_bottom");
@@ -108,6 +129,7 @@ function removeH4(){
   }
 }
 function homePage(){
+  closePopDivAd();
   removeADSpan();
 }
 function newsInfoPage(){
