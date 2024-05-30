@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.4.0.0
+// @version           2.0.0.0
 // @grant             none
 // @include           *://*.bde4.*/*
 // @include           *://*.mp4er.*/*
@@ -20,6 +20,16 @@
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonFun.js
 // ==/UserScript==
+function removePopNotice(){
+    var notice = document.getElementById("notice");
+    var previousSibling = notice.previousSibling;
+    var parentNode = notice.parentNode;
+    console.log(parentNode.innerHTML);
+    parentNode.removeChild(notice);
+    notice.remove();
+    parentNode.removeChild(previousSibling);
+    previousSibling.remove();
+}
 function removeAdBlock(){
   var centers = document.getElementsByTagName("center");
   for(var c of centers){
@@ -70,9 +80,9 @@ function loadimg(){
     }
 }
 (function () {
+    removePopNotice();
     removeAdBlock();
     removeTips();
     removeComment();
     loadimg();
-
 })();
