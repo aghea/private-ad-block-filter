@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.0.0.0
+// @version           2.1.0.0
 // @grant             none
 // @include           *://*.bde4.*/*
 // @include           *://*.mp4er.*/*
@@ -19,8 +19,10 @@
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonFun.js
+// @require           https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-cookie/1.4.1/jquery.cookie.min.js
 // ==/UserScript==
 function removePopNotice(){
+    /*
     var notice = document.getElementById("notice");
     var previousSibling = notice.previousSibling;
     var parentNode = notice.parentNode;
@@ -29,6 +31,15 @@ function removePopNotice(){
     notice.remove();
     parentNode.removeChild(previousSibling);
     previousSibling.remove();
+    */
+    var t = new Date();
+    t.setDate(t.getDate() + 1);
+    t.setHours(0);
+    t.setMinutes(0);
+    t.setSeconds(0);
+    /* globals jQuery, $, waitForKeyElements */
+    $.cookie('read', true, {expires: t,path: '/'});
+    $('#notice').modal('hide');
 }
 function removeAdBlock(){
   var centers = document.getElementsByTagName("center");
