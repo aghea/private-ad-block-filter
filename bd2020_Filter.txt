@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: ageha's bd2020 Filter
-! Last Modified: 18 Jan 2024 14:14 UTC
+! Last Modified: 4 Jun 2024 14:14 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -19,16 +19,6 @@ mp4er.cc###left-menu
 mp4er.cc##.error
 mp4er.cc##.col-md-5
 mp4er.cc##.col-md-7
-btbdys.com##.col-md-7
-btbdys.com##.col-md-5
-52bdys.com##.col-md-7
-52bdys.com##.col-md-5
-bdys10.com##.col-md-7
-bdys10.com##.col-md-5
-bdys10.com##.col-12
-bdys10.com##.card-header.py-2
-bdys10.com##.card-body.text-muted
-bdys10.com##.card-body.text-cool
 domp4.cc###HMRichBox
 domp4.cc###HMcoupletDivright
 domp4.cc###HMcoupletDivleft
@@ -39,10 +29,10 @@ t-rex.tzfile.com###comments
 t-rex.tzfile.com##.single-bottom-html
 t-rex.tzfile.com###secondary
 dygangs.net##td[style="line-height: 18px; word-break: break-all"]
-yjys.me##.col-md-7
-yjys.me##.col-md-5
-yjys.me##.col-12
-yjys.me##.card-header.py-2
-yjys.me##.card-body.text-muted
-yjys.me##.card-body.text-cool
+yjys01.me##.col-md-7
+yjys01.me##.col-md-5
+yjys01.me##.col-12
+yjys01.me##.card-header.py-2
+yjys01.me##.card-body.text-muted
+yjys01.me##.card-body.text-cool
 
