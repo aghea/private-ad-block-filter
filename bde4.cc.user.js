@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.1.0.0
+// @version           2.1.0.2
 // @grant             none
 // @include           *://*.bde4.*/*
 // @include           *://*.mp4er.*/*
@@ -22,8 +22,23 @@
 // @require           https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-cookie/1.4.1/jquery.cookie.min.js
 // ==/UserScript==
 function removePopNotice(){
-    /*
+    /* globals jQuery, $, waitForKeyElements */
+	localStorage.setItem('disableAd', '1');
+    $('#yalayi').remove();
+
+    var t = new Date();
+	t.setDate(t.getDate() + 2);
+    t.setHours(0);
+    t.setMinutes(0);
+    t.setSeconds(0);
+	$.cookie('read', true, {expires: t, path: '/'});
+	$('#notice').modal('hide');
+    $('#notice').remove();
+
+    $("modal-backdrop.fade").remove();
+    $("modal.modal-blur.fade").remove();
     var notice = document.getElementById("notice");
+    if(notice == null) return;
     var previousSibling = notice.previousSibling;
     var parentNode = notice.parentNode;
     console.log(parentNode.innerHTML);
@@ -31,15 +46,6 @@ function removePopNotice(){
     notice.remove();
     parentNode.removeChild(previousSibling);
     previousSibling.remove();
-    */
-    var t = new Date();
-    t.setDate(t.getDate() + 1);
-    t.setHours(0);
-    t.setMinutes(0);
-    t.setSeconds(0);
-    /* globals jQuery, $, waitForKeyElements */
-    $.cookie('read', true, {expires: t,path: '/'});
-    $('#notice').modal('hide');
 }
 function removeAdBlock(){
   var centers = document.getElementsByTagName("center");
