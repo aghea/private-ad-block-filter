@@ -59,7 +59,7 @@ function removeADSpan(){
     var spans = document.getElementsByTagName("span");
     for(var span of spans){
         if(re1.test(span.innerText)){
-            console.log(span.innerText);
+            //console.log(span.innerText);
             continue;
         }
         if(re.test(span.innerText)){
