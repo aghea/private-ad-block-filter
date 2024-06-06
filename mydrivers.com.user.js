@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.2.0.0
+// @version           2.2.0.1
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -52,10 +52,16 @@ function removeCommentsiframe(){
   iframe.parentNode.removeChild(iframe);
 }
 function removeADSpan(){
-    //广告 推广
-    var re = /\u5e7f\s*\u544a|\u63a8\s*\u5e7f/;
+    // 00：00  ？日
+    var re1 = /\d*:\d*|\d*\u65e5/;
+    //广告 推广 好物
+    var re = /\u5e7f\s*\u544a|\u63a8\s*\u5e7f|\u597d\s*\u7269/;
     var spans = document.getElementsByTagName("span");
     for(var span of spans){
+        if(re1.test(span.innerText)){
+            console.log(span.innerText);
+            continue;
+        }
         if(re.test(span.innerText)){
             var li = span.parentNode;
             li.removeChild(span.previousSibling);
