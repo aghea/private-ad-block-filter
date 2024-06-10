@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.1.0.2
+// @version           2.1.0.3
 // @grant             none
 // @include           *://*.bde4.*/*
 // @include           *://*.mp4er.*/*
@@ -27,7 +27,7 @@ function removePopNotice(){
     $('#yalayi').remove();
 
     var t = new Date();
-	t.setDate(t.getDate() + 2);
+	t.setDate(t.getDate() + 10);
     t.setHours(0);
     t.setMinutes(0);
     t.setSeconds(0);
