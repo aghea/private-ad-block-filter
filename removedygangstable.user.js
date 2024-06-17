@@ -4,7 +4,7 @@
 // @homepage          https://github.com/aghea/private-ad-block-filter/
 // @website           https://github.com/aghea/private-ad-block-filter/
 // @namespace         ageha.com/dygangs
-// @version      1.0
+// @version      1.0.0.1
 // @description  电影港简介无用内容删除
 // @author            ageha
 // @license           BSD 3-clause Clear License
@@ -17,6 +17,9 @@
 // ==/UserScript==
 
 (function() {
+    var top=document.getElementById("top");
+    top.parentElement.removeChild(top.nextSibling.nextSibling);
+    
     var table = document.getElementById("free").parentElement.parentElement.parentElement.parentElement;
     table.parentElement.removeChild(table);
 })();
