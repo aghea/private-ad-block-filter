@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.2.2.0
+// @version           2.3.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -59,6 +59,28 @@ function removeCommentsiframe(){
     iframe.parentNode.removeChild(iframe);
     */
   $('#commentsiframe').remove();
+}
+function removeUnwanted(){
+    $('.top').remove();
+    $('.wuquanxian').remove();
+    $('.pathway').remove();
+    $('.baidu').remove();
+    $('.footer_about').remove();
+
+    $('#menu_2023').remove();
+    $('#footer').remove();
+    $('#append_parent').remove();
+    $('#div_login').remove();
+    $('#win_float').remove();
+    $('#vleft_tab').remove();
+    $('#vright_tab').remove();
+    $('#improve_info').remove();
+    
+    $('.vedio_float').remove();
+    $('.vedio_pinlun_float').remove();
+    $('.afimg_container').remove();
+    $('.i1vbApifa5').remove();
+    $('.i1vbApifa5').remove();
 }
 function removeADSpan(){
     // 00：00  ？日
@@ -153,6 +175,7 @@ function newsInfoPage(){
   removeYjgg();
   removeH4();
   removeDoubleEleven();
+  removeUnwanted();
 }
 function commonFun(){
 
