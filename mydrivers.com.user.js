@@ -7,13 +7,14 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.2.0.1
+// @version           2.2.2.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
+// @require           https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-cookie/1.4.1/jquery.cookie.min.js
 // ==/UserScript==
 
 //关闭弹窗div
@@ -39,6 +40,7 @@ function closePopDivAd(){
 }
 //关闭页面闲置时间弹框
 function hidetj_bottom(){
+    /*
     var div = document.getElementsByClassName("tj_bottom");
     div[0].innerHTML="";
     div[0].innerText="";
@@ -46,10 +48,17 @@ function hidetj_bottom(){
     a_showhotnews_list_dia.innerHTML="";
     a_showhotnews_list_dia.innerText="";
     a_showhotnews_list_dia.parentNode.removeChild(a_showhotnews_list_dia);
+    */
+    /* globals jQuery, $, waitForKeyElements */
+    $('.tj_bottom').remove();
+    $('#a_showhotnews_list_dia').remove();
 }
 function removeCommentsiframe(){
-  var iframe = document.getElementById("commentsiframe");
-  iframe.parentNode.removeChild(iframe);
+    /*
+    var iframe = document.getElementById("commentsiframe");
+    iframe.parentNode.removeChild(iframe);
+    */
+  $('#commentsiframe').remove();
 }
 function removeADSpan(){
     // 00：00  ？日
