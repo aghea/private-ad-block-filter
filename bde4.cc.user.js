@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.2.0.3
+// @version           2.2.1.0
 // @grant             none
 // @include           *://*.bde4.*/*
 // @include           *://*.mp4er.*/*
@@ -21,20 +21,13 @@
 // ==/UserScript==
 function removeBlock(){
 	/* globals jQuery, $, waitForKeyElements */
-	/*
-	yjys.me,yjys01.com##.col-md-7
-	yjys.me,yjys01.com##.col-md-5
-	yjys.me,yjys01.com##.col-12
-	yjys.me,yjys01.com##.card-header.py-2
-	yjys.me,yjys01.com##.card-body.text-muted
-	yjys.me,yjys01.com##.card-body.text-cool
- 	*/
 	$('.col-md-7').remove();
 	$('.col-md-5').remove();
 	$('.col-12').remove();
 	$('.card-header.py-2').remove();
 	$('.card-body.text-muted').remove();
 	$('.card-body.text-cool').remove();
+	$('.card-footer.border-top').remove();
 }
 function removePopNotice(){
     localStorage.setItem('disableAd', '1');
@@ -115,6 +108,6 @@ function loadimg(){
     removePopNotice();
     removeAdBlock();
     removeTips();
-    removeComment();
+    //removeComment();
     loadimg();
 })();
