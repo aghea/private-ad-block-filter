@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.3.0.0
+// @version           3.0.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -17,6 +17,12 @@
 // @require           https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-cookie/1.4.1/jquery.cookie.min.js
 // ==/UserScript==
 
+// 根据标题关键字过滤广告
+function removeAd(){
+    //common/commonRegexDef.user.js
+  var spans = document.getElementsByClassName("titl");
+  removeAdObj(spans);
+}
 //关闭弹窗div
 function closePopDivAd(){
     var divs = document.getElementsByTagName("div");
@@ -89,10 +95,12 @@ function removeADSpan(){
     var re = /\u5e7f\s*\u544a|\u63a8\s*\u5e7f|\u597d\s*\u7269/;
     var spans = document.getElementsByTagName("span");
     for(var span of spans){
+        /*
         if(re1.test(span.innerText)){
             //console.log(span.innerText);
             continue;
         }
+        */
         if(re.test(span.innerText)){
             var li = span.parentNode;
             li.removeChild(span.previousSibling);
@@ -167,6 +175,7 @@ function removeH4(){
 }
 function homePage(){
   closePopDivAd();
+    removeAd();
   removeADSpan();
 }
 function newsInfoPage(){
