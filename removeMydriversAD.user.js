@@ -22,5 +22,6 @@ function removeAd(){
 }
 
 (function () {
-  removeAd();
+  //disuse 
+  //removeAd();
 })();
