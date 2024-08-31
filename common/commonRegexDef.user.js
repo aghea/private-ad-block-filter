@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.5.0.31
+// @version           1.5.0.35
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
