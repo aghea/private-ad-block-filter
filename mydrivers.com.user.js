@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           3.1.0.0
+// @version           3.1.1.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -175,8 +175,10 @@ function removeH4(){
 }
 function resizeNewsInfoP(){
     $(".news_info p").css('padding','4px');
-    $(".news_info p").css('font-size','12px');
+    $(".news_info p").css('line-size','25px');
+    $(".news_info").css('font-size','13px');
 }
+
 function homePage(){
   closePopDivAd();
     removeAd();
