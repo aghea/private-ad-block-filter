@@ -175,7 +175,7 @@ function removeH4(){
 }
 function resizeNewsInfoP(){
     $(".news_info p").css('padding','4px');
-    $(".news_info p").css('line-size','25px');
+    $(".news_info p").css('line-height','25px');
     $(".news_info").css('font-size','13px');
 }
 
