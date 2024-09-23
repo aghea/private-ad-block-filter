@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      1.2.2.0
+// @version      1.2.3.0
 // @description  移除mydrivers页面评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -23,8 +23,8 @@ function replaceStrong(){
             var text = div.innerHTML.toString();
             var t = text.replaceAll("<strong>"," ").replaceAll("<strong ","&lt; ").replaceAll("</strong>"," ")
                         .replaceAll("<b>"," ").replaceAll("</b>"," ")
-                        .replaceAll("<font color='#ff0000'>"," ").replaceAll('<font color="#ff0000">'," ").replaceAll("</font>"," ")
-                        .replaceAll("color:"," ").replaceAll('< style=" rgb(255, 0, 0);">'," ");
+                        .replaceAll("<font color='#ff0000'>"," ").replaceAll("</font>"," ")
+                        .replaceAll("color:"," ").replaceAll(new RegExp('<\d*style=\d*"\d*rgb(\d*255,\d*0,\d*0)\d*;\d*">', "g")," ");
             div.innerHTML=t;
 }
 //获得最后一个p标签
