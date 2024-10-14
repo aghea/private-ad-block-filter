@@ -23,7 +23,7 @@ function replaceStrong(){
             var text = div.innerHTML.toString();
             var t = text.replaceAll("<strong>"," ").replaceAll("<strong ","&lt; ").replaceAll("</strong>"," ")
                         .replaceAll("<b>"," ").replaceAll("</b>"," ")
-                        .replaceAll(new RegExp('<\s*font\s*color\s*=[']#ff0000[']>', "g")," ").replaceAll("</font>"," ")
+                        .replaceAll(new RegExp('<\s*font\s*color\s*=\'#ff0000\'>', "g")," ").replaceAll("</font>"," ")
                         .replaceAll("color:"," ").replaceAll(new RegExp('<\s*style=\s*"\s*rgb(\s*255,\s*0,\s*0)\s*;\s*">', "g")," ");
             div.innerHTML=t;
 }
