@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      1.2.4.0
+// @version      1.2.5.0
 // @description  移除mydrivers页面评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -24,7 +24,8 @@ function replaceStrong(){
             var t = text.replaceAll("<strong>"," ").replaceAll("<strong ","&lt; ").replaceAll("</strong>"," ")
                         .replaceAll("<b>"," ").replaceAll("</b>"," ")
                         .replaceAll(new RegExp('<\s*font\s*color\s*=\'#ff0000\'>', "g")," ").replaceAll("</font>"," ")
-                        .replaceAll("color:"," ").replaceAll(new RegExp('<\s*style=\s*"\s*rgb(\s*255,\s*0,\s*0)\s*;\s*">', "g")," ");
+                        //<\s*style=\s*"\s*rgb(\s*255,\s*0,\s*0)\s*;\s*">'
+                        .replaceAll("color:"," ").replaceAll(new RegExp('\u003c\s*\u0073\u0074\u0079\u006c\u0065\s*\u003d\s*\u0022\s*\u0072\u0067\u0062\u0028\s*\u0032\u0035\u0035\u002c\s*\u0030\u002c\s*\u0030\u0029\s*\u003b\s*\u0022\u003e', "g")," ");
             div.innerHTML=t;
 }
 //获得最后一个p标签
