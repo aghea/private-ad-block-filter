@@ -1,29 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: ageha's bd2020 Filter
-! Last Modified: 22 Jun 2024 22:22 UTC
+! Last Modified: 11 Nov 2024 22:22 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
 !
 !-----------------------General advert blocking filters-----------------------!
-bd-film.com###rel_movies_cpc_main
-bd-film.cc###rel_movies_cpc_main
-bd2020.com###rel_movies_cpc_sub
-mp4pa.com##.embed-responsive.clearfix
-bd2020.com##.dfg-video-title
-bd2020.com##.videopic.lazy.swiper-lazy
-domp4.cc##.alert.alert-warning.alert-dismissable
-domp4.cc##.footer.cclear
-mp4er.cc###right-menu
-mp4er.cc###left-menu
-mp4er.cc##.error
-mp4er.cc##.col-md-5
-mp4er.cc##.col-md-7
-domp4.cc###HMRichBox
-domp4.cc###HMcoupletDivright
-domp4.cc###HMcoupletDivleft
-domp4.cc##.article-related.download_help
-mp4us.com##.article-related.download_help
+padmp4.com,mp4us.com,domp4.cc##.alert.alert-warning.alert-dismissable
+padmp4.com,mp4us.com,domp4.cc##.footer.cclear
+padmp4.com,mp4us.com,domp4.cc###HMRichBox
+padmp4.com,mp4us.com,domp4.cc###HMcoupletDivright
+padmp4.com,mp4us.com,domp4.cc###HMcoupletDivleft
+padmp4.com,mp4us.com,domp4.cc##.article-related.download_help
 t-rex.tzfile.com##.single-top-html
 t-rex.tzfile.com###comments
 t-rex.tzfile.com##.single-bottom-html
