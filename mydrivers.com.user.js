@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           3.1.1.0
+// @version           3.1.1.1
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -22,6 +22,14 @@ function removeAd(){
     //common/commonRegexDef.user.js
   var spans = document.getElementsByClassName("titl");
   removeAdObj(spans);
+}
+//删除red样式
+function removeRedSpan(){
+  var spans = document.getElementsByClassName("redb");
+  for(var idx = 0; idx < spans.length; idx++){
+      var span = spans[idx];
+      span.classList.remove("redb")
+  }
 }
 //关闭弹窗div
 function closePopDivAd(){
@@ -39,9 +47,12 @@ function closePopDivAd(){
         catch(err) {
         }
     }
-    var parent = array[array.length - 1].parentNode;
-    for (idx = array.length - 1 ; idx > -1; idx--){
-        parent.removeChild(array[idx]);
+    try{
+        var parent = array[array.length - 1].parentNode;
+        for (idx = array.length - 1 ; idx > -1; idx--){
+            parent.removeChild(array[idx]);
+        }
+    }catch(err) {
     }
 }
 //关闭页面闲置时间弹框
