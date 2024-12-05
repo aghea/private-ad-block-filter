@@ -3,13 +3,12 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter/
 // @homepage          https://github.com/aghea/private-ad-block-filter/
 // @website           https://github.com/aghea/private-ad-block-filter/
-// @version      1.0
+// @version      2.0
 // @description  bdys自动打开剧情介绍
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @match        *://*.bdys*.*/*
-// @include        *://*.yjys*.*/*
+// @match        *://*.*.*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bdys01.com
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
@@ -19,8 +18,10 @@
 
 (function() {
     var synopsis = document.getElementById("synopsis");
-    var className = synopsis.className;
-    if(className.indexOf("show") == -1){
-        synopsis.className = className.toString() + " show";
-    }
+    try{
+        var className = synopsis.className;
+        if(className.indexOf("show") == -1){
+            synopsis.className = className.toString() + " show";
+        }
+    }catch(err){}
 })();
