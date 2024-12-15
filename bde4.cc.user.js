@@ -7,7 +7,7 @@
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           2.2.3.1
+// @version           2.2.3.2
 // @grant             none
 // @include           *://*.bde4.*/*
 // @include           *://*.mp4er.*/*
@@ -32,6 +32,8 @@ function removeBlock(){
 	$('.navbar.navbar-expand-md.navbar-light.d-print-none').remove();
 	$('.footer.container-fluid.border-top').remove();
 	$('#play-list').parent().remove();
+	$('#torrent-list').remove();
+    	$('.card.mt-3.download-list').remove();
 }
 function removePopNotice(){
     localStorage.setItem('disableAd', '1');
