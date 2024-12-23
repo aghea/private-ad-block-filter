@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
-// @version      1.2.5.0
+// @version      1.2.6.0
 // @description  移除mydrivers页面评论导向
 // @author       ageha
 // @license           BSD 3-clause Clear License
@@ -66,14 +66,14 @@ function removePLinkByTag(tag){
 }
 function removeOpByDoubleChk(){
     var regArray = [
-        //对此|大家|你,怎么看
-        /\u5bf9\u6b64|\u5927\u5bb6|\u4f60/,/\u600e\u4e48\u770b/
+        //对此|大家|你,怎么看待
+        /\u5bf9\u6b64|\u5927\u5bb6|\u4f60/,/\u600e\u4e48|\u770b\u5f85/
         ,
         //你喜欢|吗？
         /\u4f60\u559c\u6b22/,/\u5417\uff1f/
         ,
         //怎么看|评论区
-        /\u600e\u4e48\u770b/,/\u8bc4\u8bba\u533a/
+        /\u600e\u4e48|\u770b\u5f85/,/\u8bc4\u8bba\u533a/
     ];
     var plinks = div.getElementsByTagName("p");
     for(var idx = plinks.length - 1; idx > -1 ; idx --){
