@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: ageha's bd2020 Filter
-! Last Modified: 4 Dec 2024 22:22 UTC
+! Last Modified: 25 Dec 2024 19:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -17,10 +17,5 @@ t-rex.tzfile.com###comments
 t-rex.tzfile.com##.single-bottom-html
 t-rex.tzfile.com###secondary
 dygangs.net##td[style="line-height: 18px; word-break: break-all"]
-xlys01.com,yjys.me,yjys01.com,yjys02.com##.col-md-7
-xlys01.com,yjys.me,yjys01.com,yjys02.com##.col-md-5
-xlys01.com,yjys.me,yjys01.com,yjys02.com##.col-12
-xlys01.com,yjys.me,yjys01.com,yjys02.com##.card-header.py-2
-xlys01.com,yjys.me,yjys01.com,yjys02.com##.card-body.text-muted
-xlys01.com,yjys.me,yjys01.com,yjys02.com##.card-body.text-cool
+
 
