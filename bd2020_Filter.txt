@@ -1,17 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: ageha's bd2020 Filter
-! Last Modified: 25 Dec 2024 19:42 UTC
+! Last Modified: 19 Feb 2025 12:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
 !
 !-----------------------General advert blocking filters-----------------------!
-padmp4.com,mp4us.com,domp4.cc##.alert.alert-warning.alert-dismissable
-padmp4.com,mp4us.com,domp4.cc##.footer.cclear
-padmp4.com,mp4us.com,domp4.cc###HMRichBox
-padmp4.com,mp4us.com,domp4.cc###HMcoupletDivright
-padmp4.com,mp4us.com,domp4.cc###HMcoupletDivleft
-padmp4.com,mp4us.com,domp4.cc##.article-related.download_help
+padmp4.com,mp4us.com,domp4.cc,xlmp4.cc##.alert.alert-warning.alert-dismissable
+padmp4.com,mp4us.com,domp4.cc,xlmp4.cc##.footer.cclear
+padmp4.com,mp4us.com,domp4.cc,xlmp4.cc###HMRichBox
+padmp4.com,mp4us.com,domp4.cc,xlmp4.cc###HMcoupletDivright
+padmp4.com,mp4us.com,domp4.cc,xlmp4.cc###HMcoupletDivleft
+padmp4.com,mp4us.com,domp4.cc,xlmp4.cc##.article-related.download_help
 t-rex.tzfile.com##.single-top-html
 t-rex.tzfile.com###comments
 t-rex.tzfile.com##.single-bottom-html
