@@ -4,11 +4,12 @@
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
 // @namespace    ageha.com/domp4
-// @version      1.0.0.1
+// @version      1.0.0.2
 // @description  删除mp4的top div
 // @author       ageha
 // @include        https://www.mp4us.com/html/*
 // @include        https://www.padmp4.com/html/*
+// @include        https://www.xlmp4.cc/html/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=mp4us.com
 // @license           BSD 3-clause Clear License
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/DelMp4.comTopDiv.user.js
