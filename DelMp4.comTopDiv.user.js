@@ -7,9 +7,7 @@
 // @version      2.0.0.0
 // @description  删除mp4的top div
 // @author       ageha
-// @include        https://www.mp4us.com/html/*
-// @include        https://www.padmp4.com/html/*
-// @include        https://www.xlmp4.cc/html/*
+// @include        https://*.*.*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=mp4us.com
 // @license           BSD 3-clause Clear License
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/DelMp4.comTopDiv.user.js
