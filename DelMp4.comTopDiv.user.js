@@ -4,7 +4,7 @@
 // @homepage          https://github.com/aghea/private-ad-block-filter
 // @website           https://github.com/aghea/private-ad-block-filter
 // @namespace    ageha.com/domp4
-// @version      2.0.0.0
+// @version      2.0.0.1
 // @description  删除mp4的top div
 // @author       ageha
 // @include        https://*.*.*/*
@@ -20,13 +20,13 @@
 (function() {
     'use strict';
     const theHead = document.title;
-    if(theHead.indexOf("Mp4电影") > -1){
+    if(theHead.indexOf("MP4电影") > -1 || theHead.indexOf("Mp4电影") > -1){
         /* globals jQuery, $, waitForKeyElements */
         $('#top').remove();
         $('.alert.alert-warning.alert-dismissable').remove();
         $('#HMRichBox').remove();
         $('#HMcoupletDivright').remove();
         $('#HMcoupletDivleft').remove();
-        $('.article-related.download_help').remove();
+        $('.download_help').remove();
     }
 })();
