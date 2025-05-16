@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           3.1.1.1
+// @version           3.1.1.2
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -97,7 +97,7 @@ function removeUnwanted(){
     $('.vedio_pinlun_float').remove();
     $('.afimg_container').remove();
     $('.i1vbApifa5').remove();
-    $('.i1vbApifa5').remove();
+    $('.jdong1div_double').remove();
 }
 function removeADSpan(){
     // 00：00  ？日
