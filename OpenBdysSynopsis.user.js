@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         bdys自动打开剧情介绍 删除广告
+// @name         bdys自动打开剧情介绍
 // @homepageURL       https://github.com/aghea/private-ad-block-filter/
 // @homepage          https://github.com/aghea/private-ad-block-filter/
 // @website           https://github.com/aghea/private-ad-block-filter/
-// @version      3.0.0.0
-// @description  bdys自动打开剧情介绍 删除广告
+// @version      3.0.0.2
+// @description  bdys自动打开剧情介绍
 // @namespace         ageha.com/bde4
 // @author            ageha
 // @license           BSD 3-clause Clear License
@@ -31,8 +31,13 @@
         indexesToRemove.push(index);
         element.remove();
     });
-
     //.each(indexesToRemove, function(i, index){("ul li").eq(index).remove();
     //});
+    $("#play-list").parent().remove();
+
+    $(".card-body.text-muted").parent().remove();
+
+    $("#reply-form").parent().remove();
+
 
 })();
