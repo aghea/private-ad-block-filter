@@ -7,12 +7,11 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           3.1.1.2
+// @version           4.0.0.0
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
-// @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
 // @require           https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery-cookie/1.4.1/jquery.cookie.min.js
 // ==/UserScript==
@@ -23,12 +22,26 @@ function removeAd(){
   var spans = document.getElementsByClassName("titl");
   removeAdObj(spans);
 }
+// 删除讣告
+function removeBadNews(){
+  var spans = document.getElementsByClassName("titl");
+  for(var idx = 0; idx < spans.length; idx++){
+      var span = spans[idx];
+      if(span.innerHTML.toString().indexOf("bad_news") > -1){
+          span.parentNode.classList.remove("bad_news");
+          var childnodes = span.childNodes;
+          for(var childnode of childnodes){
+              childnode.classList.remove("bad_news");
+          }
+      }
+  }
+}
 //删除red样式
 function removeRedSpan(){
   var spans = document.getElementsByClassName("redb");
   for(var idx = 0; idx < spans.length; idx++){
       var span = spans[idx];
-      span.classList.remove("redb")
+      span.classList.remove("redb");
   }
 }
 //关闭弹窗div
@@ -57,25 +70,12 @@ function closePopDivAd(){
 }
 //关闭页面闲置时间弹框
 function hidetj_bottom(){
-    /*
-    var div = document.getElementsByClassName("tj_bottom");
-    div[0].innerHTML="";
-    div[0].innerText="";
-    var a_showhotnews_list_dia = document.getElementById("a_showhotnews_list_dia");
-    a_showhotnews_list_dia.innerHTML="";
-    a_showhotnews_list_dia.innerText="";
-    a_showhotnews_list_dia.parentNode.removeChild(a_showhotnews_list_dia);
-    */
     /* globals jQuery, $, waitForKeyElements */
     $('.tj_bottom').remove();
     $('#a_showhotnews_list_dia').remove();
 }
 function removeCommentsiframe(){
-    /*
-    var iframe = document.getElementById("commentsiframe");
-    iframe.parentNode.removeChild(iframe);
-    */
-  $('#commentsiframe').remove();
+    $('#commentsiframe').remove();
 }
 function removeUnwanted(){
     $('.top').remove();
@@ -106,12 +106,6 @@ function removeADSpan(){
     var re = /\u5e7f\s*\u544a|\u63a8\s*\u5e7f|\u597d\s*\u7269/;
     var spans = document.getElementsByTagName("span");
     for(var span of spans){
-        /*
-        if(re1.test(span.innerText)){
-            //console.log(span.innerText);
-            continue;
-        }
-        */
         if(re.test(span.innerText)){
             var li = span.parentNode;
             li.removeChild(span.previousSibling);
@@ -192,8 +186,9 @@ function resizeNewsInfoP(){
 
 function homePage(){
   closePopDivAd();
-    removeAd();
+  removeAd();
   removeADSpan();
+  removeBadNews();
 }
 function newsInfoPage(){
   hidetj_bottom();
