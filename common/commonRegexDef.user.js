@@ -7,7 +7,7 @@
 // @namespace         ageha.com/common
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           1.5.0.43
+// @version           1.5.0.44
 // @grant             none
 // @include           *://*.*.*//*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
@@ -21,8 +21,8 @@ function initRegexArray(){
     var re2=/\u9650\u65f6|\u65b0\u4f4e|\u7acb\u51cf|\u5230\u624b|\u4f4e\u81f3|\u5927\u4fc3|\u9884\u552e|\u5305\u90ae|\u76f4\u964d|\u6284\u5e95|\u79d2\u6740|\u72c2\u4fc3|\u5546\u8d85|\u5238\u540e/;
     //xx.xx折
     var re3=/\d{1,2}(\.[0-9]{1,2})\u6298/;
-    //罗永浩李国庆周鸿祎董明珠吴京余承东徐直军李想李瑞峰王自如 董宇辉 姚安娜 郑爽邓承浩 张勇 刘畊宏 魏建军 尹同跃 唐尚珺 于东来
-    var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0|\u5434\u4eac|\u4f59\u627f\u4e1c|\u5f90\u76f4\u519b|\u674e\u60f3|\u674e\u745e\u5cf0|\u738b\u81ea\u5982|\u8463\u5b87\u8f89|\u59da\u5b89\u5a1c|\u90d1\u723d|\u9093\u627f\u6d69|\u5f20\u52c7|\u5218\u754a\u5b8f|\u9b4f\u5efa\u519b|\u5c39\u540c\u8dc3|\u5510\u5c1a\u73fa|\u4e8e\u4e1c\u6765/;
+    //罗永浩 李国庆 周鸿祎 董明珠 吴京 余承东 徐直军 李想 李瑞峰 王自如 董宇辉 姚安娜 郑爽 邓承浩 张勇 刘畊宏 魏建军 尹同跃 唐尚珺 于东来 张雪峰
+    var re4=/\u7f57\u6c38\u6d69|\u674e\u56fd\u5e86|\u5468\u9e3f\u794e|\u8463\u660e\u73e0|\u5434\u4eac|\u4f59\u627f\u4e1c|\u5f90\u76f4\u519b|\u674e\u60f3|\u674e\u745e\u5cf0|\u738b\u81ea\u5982|\u8463\u5b87\u8f89|\u59da\u5b89\u5a1c|\u90d1\u723d|\u9093\u627f\u6d69|\u5f20\u52c7|\u5218\u754a\u5b8f|\u9b4f\u5efa\u519b|\u5c39\u540c\u8dc3|\u5510\u5c1a\u73fa|\u4e8e\u4e1c\u6765|\u5f20\u96ea\u5cf0/;
     //长津湖战狼
     var re5=/\u957f\u6d25\u6e56|\u6218\u72fc/;
     //理想 大众 奔驰 宝马 丰田 五菱 宏光 奥迪 蔚来 本田 思域 奇瑞 长城[坦克|欧拉|山海炮] 雷克萨斯 北京现代 比亚迪 长安UNI汽车智电逸达 蒙迪欧 气囊 哈弗 坦克\d(1,3) 领克0 零跑 小鹏 帝豪 北京越野 极氪 魏牌 阿维塔 岚图汽车 别克 腾势 智己 雪佛兰 吉利星越 懂车帝 广汽 埃安 赛力斯 小米汽车 SU7 高合  深蓝L 深蓝汽车  长城汽车 岚图 哪吒L 哪吒汽车 乾崑 创维汽车 江铃福特 华为智驾 仰望U8 乐道 [享问智尊]界 极狐
