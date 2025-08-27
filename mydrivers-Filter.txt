@@ -1,91 +1,97 @@
 [Adblock Plus 2.0]
 ! Title: ageha's mydrivers Filter
-! Last Modified: 16 Dec 2024 11:26 UTC
+! Last Modified: 28 Aug 2025 11:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
 !
 !-----------------------General advert blocking filters-----------------------!
-mydrivers.com###weixin
+mydrivers.com##.adsbygoogle
 mydrivers.com##.baidu
 mydrivers.com##.baidu_left
-mydrivers.com##.adsbygoogle
-mydrivers.com##.duilian_close2
-mydrivers.com###i_yuedu_content
-mydrivers.com##.hot.photo
-mydrivers.com##.news_right
-mydrivers.com##.pageFooter
 mydrivers.com##.bqian
 mydrivers.com##.bqian1
-mydrivers.com##.zcdf
-mydrivers.com##.share
-mydrivers.com###i_lastnext
+mydrivers.com##.chunjie
+mydrivers.com##.dashang
+mydrivers.com##.duilian_close2
+mydrivers.com##.end
+mydrivers.com##.ewmer2
+mydrivers.com##.guanzhu
+mydrivers.com##.guoqing
+mydrivers.com##.hdnewyear
+mydrivers.com##.hot.photo
+mydrivers.com##.holiday
+mydrivers.com##.jdong11
+mydrivers.com##.jdong11bg
+mydrivers.com##.jdong1div_double
+mydrivers.com##.jieri
+mydrivers.com##.main_title
+mydrivers.com##.main_right
 mydrivers.com##.module_info
-mydrivers.com##div[style="overflow:hidden;"]
-mydrivers.com##.plun_box
+mydrivers.com##.nav
+mydrivers.com##.nav_box
+mydrivers.com##.news_bt1
+mydrivers.com##.news_lb
+mydrivers.com##.news_right
 mydrivers.com##.news_t66j_d.t1j_l0ist20_tu2020
+mydrivers.com##.newsinfo_vedio
+mydrivers.com##.pageFooter
+mydrivers.com##.pathway
+mydrivers.com##.plun_box
+mydrivers.com##.pce_list
+mydrivers.com##.share
+mydrivers.com##.shidian
+mydrivers.com##.taobao_tab
+mydrivers.com##.top
+mydrivers.com##.top_1a
+mydrivers.com##.url
+mydrivers.com##.xguan_pce
+mydrivers.com##.xianguan
+mydrivers.com##.yuandan
+mydrivers.com##.zcdf
+mydrivers.com##.zhongqiu
+mydrivers.com##.zhuanzai
+
+mydrivers.com###commentsiframe
+mydrivers.com###footer
+mydrivers.com###hostnews_list
+mydrivers.com###i_lastnext
+mydrivers.com###i_yuedu_content
+mydrivers.com###menu_m
+mydrivers.com###pf_bj
+mydrivers.com###pf_html
+mydrivers.com###weixin
+
+mydrivers.com##div[style="overflow:hidden;"]
 mydrivers.com##div[style="margin:auto; padding-top:0px; text-align:center"]
 mydrivers.com##div[style="width:580px;"]
-!news.mydrivers.com##div[style="width:728px;height:90px;overflow:hidden;"]
 mydrivers.com##div[style="width:1300px;height:90px;background:#fff;"]
 mydrivers.com##div[style="width:850px;height:250px;"]
 mydrivers.com##div[style="width:1390px;height:100px;"]
 mydrivers.com##div[style="height:40px"]
 mydrivers.com##div[style="height:50px;"]
 mydrivers.com##div[style="height:60px;"]
-news.mydrivers.com##div[style="height:60px;"]
 mydrivers.com##div[style="width:890px;"]
 mydrivers.com##div[style="width:728px;"]
 mydrivers.com##div[style="margin: auto;width: 1390px;height: 90px;"]
+
+!news.mydrivers.com##div[style="width:728px;height:90px;overflow:hidden;"]
+news.mydrivers.com##div[style="height:60px;"]
 news.mydrivers.com##div[style="margin: auto;width: 580px;padding: 10px 0;"]
-mydrivers.com###footer
-mydrivers.com###commentsiframe
-mydrivers.com##.ewmer2
-mydrivers.com###hostnews_list
-mydrivers.com##.news_lb
-mydrivers.com##.guanzhu
-mydrivers.com##.url
-mydrivers.com##.end
-mydrivers.com##.zhuanzai
-mydrivers.com##.shidian
-mydrivers.com##.holiday
-mydrivers.com###menu_m
-mydrivers.com##.nav_box
-mydrivers.com##.top_1a
-mydrivers.com##.top
-mydrivers.com##.pathway
-mydrivers.com##.main_right
-mydrivers.com##.nav
-mydrivers.com##.yuandan
-mydrivers.com##.chunjie
-mydrivers.com##.hdnewyear
-mydrivers.com##.jieri
-mydrivers.com##.xianguan
-mydrivers.com##.zhongqiu
-mydrivers.com##.guoqing
-mydrivers.com##.dashang
-mydrivers.com##.taobao_tab
-mydrivers.com##.xguan_pce
-mydrivers.com##.news_bt1
-mydrivers.com##.newsinfo_vedio
-news.mydrivers.com##.main_title
-news.mydrivers.com##.function
-news.mydrivers.com##.likexguan
+news.mydrivers.com##div[style="height: 60px;"]
+news.mydrivers.com##div[style="overflow: hidden;font-size:14px;padding-top:30px;border-bottom:1px solid #eee;"]
+news.mydrivers.com##div[style="margin: auto;width: 800px;padding: 10px 0;"]
+
 news.mydrivers.com##.adds
+news.mydrivers.com##.buylist_box
+news.mydrivers.com##.diaocha
+news.mydrivers.com##.function
+news.mydrivers.com##.main_title
 news.mydrivers.com##.news_df
 news.mydrivers.com##.news_zc
+news.mydrivers.com##.likexguan
 news.mydrivers.com##.page_article
-mydrivers.com##.main_title
-news.mydrivers.com##div[style="height: 60px;"]
-news.mydrivers.com##.diaocha
-mydrivers.com##.pce_list
-news.mydrivers.com##.buylist_box
 news.mydrivers.com##.tgbaobei
-news.mydrivers.com##div[style="overflow: hidden;font-size:14px;padding-top:30px;border-bottom:1px solid #eee;"]
 news.mydrivers.com##.navs_newsinfo.xg_newsinfo
-mydrivers.com###pf_bj
-mydrivers.com###pf_html
-mydrivers.com##.jdong11
-mydrivers.com##.jdong11bg
+news.mydrivers.com###a_showhotnews_list_dia
 news.mydrivers.com###pageMuLu
-news.mydrivers.com##div[style="margin: auto;width: 800px;padding: 10px 0;"]
