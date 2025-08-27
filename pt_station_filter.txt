@@ -1,0 +1,12 @@
+[Adblock Plus 2.0]
+! Title: ageha's pt_station Filter
+! Last Modified: 28 Aug 2025 12:42 UTC
+! Expires: 4 days (update frequency)
+! Homepage: https://github.com/aghea/private-ad-block-filter
+! License: https://easylist-downloads.adblockplus.org/COPYING
+!
+!-----------------------General advert blocking filters-----------------------!
+
+pt.btschool.club###ad_belownav
+pt.btschool.club###ad_torrentdetail
+
