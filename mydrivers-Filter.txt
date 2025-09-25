@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: ageha's mydrivers Filter
-! Last Modified: 28 Aug 2025 11:26 UTC
+! Last Modified: 25 Sep 2025 11:26 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -52,6 +52,7 @@ mydrivers.com##.zcdf
 mydrivers.com##.zhongqiu
 mydrivers.com##.zhuanzai
 
+mydrivers.com###AiSummaryLink
 mydrivers.com###commentsiframe
 mydrivers.com###footer
 mydrivers.com###hostnews_list
