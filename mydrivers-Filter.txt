@@ -94,5 +94,6 @@ news.mydrivers.com##.likexguan
 news.mydrivers.com##.page_article
 news.mydrivers.com##.tgbaobei
 news.mydrivers.com##.navs_newsinfo.xg_newsinfo
+news.mydrivers.com##.shoulu
 news.mydrivers.com###a_showhotnews_list_dia
 news.mydrivers.com###pageMuLu
