@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: ageha's baidu zhihu csdn Filter
-! Last Modified: 1 Oct 2025 13:42 UTC
+! Last Modified: 9 Oct 2025 13:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -8,3 +8,5 @@
 !-----------------------General advert blocking filters-----------------------!
 
 tieba.baidu.com###tiebaCustomPassLogin
+zhuanlan.zhihu.com##.css-zr60jh
+zhihu.com##.css-woosw9
