@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: ageha's pt_station Filter
-! Last Modified: 9 Oct 2025 12:42 UTC
+! Last Modified: 10 Oct 2025 12:42 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/aghea/private-ad-block-filter
 ! License: https://easylist-downloads.adblockplus.org/COPYING
@@ -13,4 +13,5 @@ carpt.net##div[style="margin-bottom: 10px"]
 carpt.net##div[style="margin-top: 10px"]
 hdarea.club###ad_belownav
 hdarea.club###ad_torrentdetail
-
+hddolby.com###ad_belownav
+hddolby.com###ad_torrentdetail
