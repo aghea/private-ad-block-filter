@@ -14,6 +14,7 @@
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/bde4.cc.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonFun.js
+// @require           https://cdn.bootcdn.net/ajax/libs/jquery/1.4.1/jquery.min.js
 // @require           https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
 // ==/UserScript==
 function removeBlock(){
@@ -119,4 +120,5 @@ function loadimg(){
         loadimg();
     }
 })();
+
 
