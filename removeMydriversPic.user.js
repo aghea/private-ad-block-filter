@@ -13,6 +13,7 @@
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversPic.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversPic.user.js
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/removeMydriversPic.user.js
+// @require           https://cdn.bootcdn.net/ajax/libs/jquery/1.4.1/jquery.min.js
 // @require           https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
 // @require           https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.js
 
@@ -193,6 +194,7 @@ function getURLBase64(url) {
         } 
     });
 })();
+
 
 
 
