@@ -7,7 +7,7 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           4.0.0.0
+// @version           4.0.1.1
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
@@ -103,8 +103,8 @@ function removeUnwanted(){
 function removeADSpan(){
     // 00：00  ？日
     var re1 = /\d*:\d*|\d*\u65e5/;
-    //广告 推广 好物
-    var re = /\u5e7f\s*\u544a|\u63a8\s*\u5e7f|\u597d\s*\u7269/;
+    //广告 推 好物 
+    var re = /\u5e7f\s*\u544a|\u63a8|\u597d\s*\u7269/;
     var spans = document.getElementsByTagName("span");
     for(var span of spans){
         if(re.test(span.innerText)){
@@ -137,6 +137,21 @@ function removeDoubleEleven(){
         }
     }
 }
+function removeGoodsCommon(p_elemts,flag,block){
+    for (var p_elemt of p_elemts){
+      var b_elemts = p_elemt.getElementsByTagName("b");
+      if (b_elemts && b_elemts.length > 0){
+        for (var b_elemt of b_elemts){
+          if (b_elemt.innerText.indexOf(block) > -1){
+          	p_elemt.parentNode.removeChild(p_elemt);
+
+            flag = false;
+        		break;
+          }
+        }
+      }
+    }
+}
 function removeGoods(){
   var block = "商品信息>>";
   var flag = true;
@@ -144,32 +159,9 @@ function removeGoods(){
   
   for (var div of divs){
     var p_elemts = div.getElementsByTagName("p");
-    for (var p_elemt of p_elemts){
-      var b_elemts = p_elemt.getElementsByTagName("b");
-      if (b_elemts && b_elemts.length > 0){
-        for (var b_elemt of b_elemts){
-          if (b_elemt.innerText.indexOf(block) > -1){
-          	p_elemt.parentNode.removeChild(p_elemt);
-            
-            flag = false;
-        		break;
-          }
-        }
-      }
-    }
+    removeGoodsCommon(p_elemts,flag,block);
     var div_elemts = div.getElementsByTagName("div");
-    for (var div_elemt of div_elemts){
-      var b_elemts = div_elemt.getElementsByTagName("b");
-      if (b_elemts && b_elemts.length > 0){
-        for (var b_elemt of b_elemts){
-          if (b_elemt.innerText.indexOf(block) > -1){
-          	div_elemt.parentNode.removeChild(div_elemt);
-            flag = false;
-        		break;
-          }
-        }
-      }
-    }
+    removeGoodsCommon(div_elemts,flag,block);
   }
 }
 function removeH4(){
