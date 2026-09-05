@@ -7,14 +7,13 @@
 // @namespace         ageha.com/mydrivers
 // @author            ageha
 // @license           BSD 3-clause Clear License
-// @version           4.0.1.1
+// @version           4.0.2.1
 // @grant             none
 // @include           *://*.mydrivers.com/*
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
 // @require           https://cdn.bootcdn.net/ajax/libs/jquery/1.4.1/jquery.min.js
-// @require           https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
 // ==/UserScript==
 
 // 根据标题关键字过滤广告
