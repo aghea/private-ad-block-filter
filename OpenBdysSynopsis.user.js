@@ -3,7 +3,7 @@
 // @homepageURL       https://github.com/aghea/private-ad-block-filter/
 // @homepage          https://github.com/aghea/private-ad-block-filter/
 // @website           https://github.com/aghea/private-ad-block-filter/
-// @version      3.0.0.2
+// @version      3.1.0.0
 // @description  bdys自动打开剧情介绍
 // @namespace         ageha.com/bde4
 // @author            ageha
@@ -13,8 +13,7 @@
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
 // @installURL        https://github.com/aghea/private-ad-block-filter/raw/master/OpenBdysSynopsis.user.js
-// @require           https://cdn.bootcdn.net/ajax/libs/jquery/1.4.1/jquery.min.js
-// @require           https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js
+// @require           http://news.sina.com.cn/js/jquery/jquery-1.4.2.min.js
 // @grant        none
 // ==/UserScript==
 
