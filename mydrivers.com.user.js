@@ -13,7 +13,7 @@
 // @updateURL         https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @downloadURL       https://github.com/aghea/private-ad-block-filter/raw/master/mydrivers.com.user.js
 // @require           https://github.com/aghea/private-ad-block-filter/raw/master/common/commonRegexDef.user.js
-// @require           https://cdn.bootcdn.net/ajax/libs/jquery/1.4.1/jquery.min.js
+// @require           http://news.sina.com.cn/js/jquery/jquery-1.4.2.min.js
 // ==/UserScript==
 
 // 根据标题关键字过滤广告
